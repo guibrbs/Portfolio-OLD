@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'SuperaGothic-UltraBlack';
+    src: url('fonts/SuperaGothic-UltraBlack.otf');
+}
+.content{
+    display: flex;
+    position: relative;
+    margin: 40px;
+    width: 50vw;
+    height: 92vh;
+    background-color: #CA6702;
+    transition: ease-in-out 0.8s;
+    transition-delay: 0.12s;
+}
+.content--movement{
+    display: flex;
+    position: relative;
+    margin: 40px;
+    width: 95vw;
+    height: 92vh;
+    background-color: #CA6702;
+    transition: ease-in-out 0.8s;
+    transition-delay: 0.12s;
+
+}
+.letters--group{
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: ease-in-out 0.8s;
+    transition-delay: 0.12s;
+
+}
+.letters--movement{
+    position: absolute;
+    left: 92%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: ease-in-out 0.8s;
+    transition-delay: 0.12s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.letters--style{
+    font-family: 'SuperaGothic-UltraBlack', 'Arial';
+    line-height: 40px;
+    font-size: 15rem;
+    color: #001219;
+    text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.letters--scroll{
+    opacity: 1;
+    font-family: 'Supera Gothic', 'Arial';
+    font-size: 0.8rem;
+    position: absolute;
+    left: -280%;
+    top: 110%;
+    transform: rotate(270deg);
+    color: white;
+    transition: opacity 0.5s;
+}
+.letters--scroll--disable{
+    opacity: 0;
+    font-family: 'Supera Gothic', 'Arial';
+    font-size: 0.8rem;
+    position: absolute;
+    left: -280%;
+    top: 110%;
+    transform: rotate(270deg);
+    color: white;
+    transition: opacity 0.5s;
+}
+.link{
+    opacity: 1;
+    color: white;
+    position: absolute;
+    left: -277%;
+    top: 116%;
+    transition: opacity 0.5s;
+}
+.disable--arrow{
+    opacity: 0;
+    color: white;
+    position: absolute;
+    left: -277%;
+    top: 117%;
+}
+@-webkit-keyframes hang-on-hover {
+    0% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+    50% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
+    }
+}
+@keyframes hang-on-hover {
+    0% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(10px);
+    }
+    50% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(12px);
+    }
+}
+@-webkit-keyframes hang-on-hover-sink {
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(12px);
+    }
+}
+@keyframes hang-on-hover-sink {
+    100% {
+        -webkit-transform: translateY(8px);
+        transform: translateY(12px);
+    }
+}
+.hang-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hang-on-hover, .hang-on-hover:focus, .hang-on-hover:active {
+    -webkit-animation-name: hang-on-hover-sink, hang-on-hover;
+    animation-name: hang-on-hover-sink, hang-on-hover;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.letters--about{
+    opacity: 0;
+    font-family: "Supera Gothic ExtraBold", 'Arial';
+    font-size: 1.8rem;
+    line-height: 7px;
+    position: absolute;
+    left: 35%;
+    top: 49%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.5s;
+    color: #001219;
+    text-align: left;
+}
+.letters--white{
+    color: white;
+}
+.letters--about--movement{
+    opacity: 1;
+    font-family: "Supera Gothic ExtraBold", 'Arial';
+    font-size: 1.8rem;
+    line-height: 7px;
+    position: absolute;
+    left: 35%;
+    top: 42%;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.7s;
+    transition-delay: 1s;
+    text-align: left;
+}
+.link--netflix{
+    opacity: 0;
+    position: absolute;
+    left: 16.5%;
+    top: 52%;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.link--netflix--movement{
+    opacity: 1;
+    position: absolute;
+    left: 20.5%;
+    top: 52%;
+    text-decoration: none;
+    transition: ease-in-out 1s;
+    transition-delay: 1.1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info--netflix{
+    opacity: 0;
+    font-family: "Supera Gothic", 'Arial';
+    color: #001219;
+    position: absolute;
+    left: 23%;
+    top: 51%;
+    font-size: 1.1rem;
+    line-height: 2px;
+    text-align: left;
+    transition: ease-in-out 0.3s;
+}
+.info--netflix--white{
+    color: white;
+}
+.info--netflix--movement{
+    opacity: 1;
+    font-family: "Supera Gothic", 'Arial';
+    color: #001219;
+    position: absolute;
+    left: 29%;
+    top: 51%;
+    font-size: 1.1rem;
+    line-height: 2px;
+    text-align: left;
+    transition: ease-in-out 1s;
+    transition-delay: 0.9s;
 }
