@@ -159,7 +159,8 @@
     left: 35%;
     top: 49%;
     transform: translate(-50%,-50%);
-    transition: all ease 0.5s;
+    transition: all ease 0.3s;
+    transition-delay: 0.1s;
     color: #001219;
     text-align: left;
 }
