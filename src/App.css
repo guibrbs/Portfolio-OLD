@@ -213,7 +213,7 @@
     line-height: 1px;
     text-align: left;
     margin-top: 7px;
-    transition: all ease-in-out 1s;
+    transition: all ease-in-out 0.5s;
     transition-delay: 1.1s;
 }
 .info--netflix--white{
