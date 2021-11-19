@@ -96,6 +96,9 @@
     transform: rotate(270deg);
     transition: all ease-in-out 0.5s;
 }
+.link{
+    padding-bottom: 5vh;
+}
 @-webkit-keyframes hang-on-hover {
     0% {
         -webkit-transform: translateY(8px);
@@ -162,7 +165,7 @@
 
 .content{
     position: absolute;
-    width: 50vw;
+    width: 60vw;
     top: 35vh;
     left: 30vw;
     transform: translate(-50%, -50%);
@@ -212,4 +215,30 @@
 .info--netflix--white{
     margin-top: 13px;
     color: white;
+}
+
+@media only screen and (max-width: 1900px) {
+    .letters--about, .letters--about--movement{
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 1680px) {
+    .letters--about, .letters--about--movement{
+        font-size: 1.6rem;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 1600px) {
+    .letters--about, .letters--about--movement{
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 1280px) {
+    .letters--about, .letters--about--movement{
+        font-size: 1rem;
+    }
 }
