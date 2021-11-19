@@ -40,22 +40,26 @@ export default () => {
             <div className={movement ? "rectangle--movement" : "rectangle"}>
                 <div className={movement ? "scroll--disable" : "scroll"}>
                     <p className={"letters--scroll"}>scroll</p>
-                    <ArrowDownwardIcon className={"link hang-on-hover"} style={{fontSize: 15}}></ArrowDownwardIcon>
+                    <ArrowDownwardIcon className={"link hang-on-hover"} style={{fontSize: 15}}/>
                 </div>
-                <div className={movement ? "letters--about--movement" : "letters--about"}>
-                    <p>Me chamo Guilherme Barbosa Ferreira</p>
-                    <p className={"letters--white"}>e este é o meu portfólio, onde poderá </p>
-                    <p className={"letters--white"}>encontrar alguns projetos meus!</p>
-                </div>
-                <div className={movement ? "content--about--movement" : "content--about"}>
-                    <a href={"https://guibrbs.github.io/ProjetoNetflix/"}>
-                        <img src={"https://www.caviarcriativo.com/wp-content/uploads/2020/06/Significados-da-Marca-Netflix.gif"} alt={"Clone Netflix"} width={150}/>
-                    </a>
-                    <div className={"info--netflix"}>
-                        <p className={"info--netflix--white"}>Clone Netflix</p>
-                        <p>React Js</p>
-                        <p>HTML</p>
-                        <p>CSS3</p>
+                <div className={"content"}>
+                    <div className={movement ? "letters--about--movement" : "letters--about"}>
+                        <p>Me chamo Guilherme Barbosa Ferreira</p>
+                        <p className={"letters--white"}>e este é o meu portfólio, onde poderá </p>
+                        <p className={"letters--white"}>encontrar alguns projetos meus!</p>
+                    </div>
+                    <div className={movement ? "content--about--movement" : "content--about"}>
+                        <a href={"https://guibrbs.github.io/ProjetoNetflix/"}>
+                            <img
+                                src={"https://www.caviarcriativo.com/wp-content/uploads/2020/06/Significados-da-Marca-Netflix.gif"}
+                                alt={"Clone Netflix"} width={150}/>
+                        </a>
+                        <div className={"info--netflix"}>
+                            <p className={"info--netflix--white"}>Clone Netflix</p>
+                            <p>React Js</p>
+                            <p>HTML</p>
+                            <p>CSS3</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,18 @@
     font-family: 'SuperaGothic-UltraBlack';
     src: url('fonts/SuperaGothic-UltraBlack.otf');
 }
+@font-face {
+    font-family: "Supera Gothic Regular";
+    src: url("fonts/SuperaGothic-Regular.otf");
+}
+@font-face {
+    font-family: "Supera Gothic ExtraBold";
+    src: url("fonts/SuperaGothic-ExtraBold.otf");
+}
+@font-face {
+    font-family: "Supera Gothic Light";
+    src: url("fonts/SuperaGothic-Light.otf");
+}
 .rectangle{
     display: flex;
     position: relative;
@@ -9,8 +21,8 @@
     width: 47.5vw;
     height: 90vh;
     background-color: #bc4b51;
-    transition: ease-in-out 0.8s;
-    transition-delay: 0.12s;
+    transition: ease-in-out 0.7s;
+    transition-delay: 0.25s;
 }
 .white--margin{
     z-index: 999;
@@ -22,21 +34,22 @@
 
 }
 .rectangle--movement{
+    display: flex;
     position: relative;
     margin: 50px;
     width: 94vw;
     height: 90vh;
     background-color: #bc4b51;
-    transition: ease-in-out 0.8s;
-    transition-delay: 0.12s;
+    transition: ease-in-out 0.7s;
+    transition-delay: 0.25s;
 }
 .letters--apresentation{
     position: absolute;
     left: 49%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: ease-in-out 0.8s;
-    transition-delay: 0.12s;
+    transition: ease-in-out 0.7s;
+    transition-delay: 0.25s;
 
 }
 .letters--apresentation--movement{
@@ -44,14 +57,14 @@
     left: 95%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: ease-in-out 0.8s;
-    transition-delay: 0.12s;
+    transition: ease-in-out 0.7s;
+    transition-delay: 0.25s;
 }
 .letters--style{
     line-height: 5px;
     text-align: left;
     font-size: 15rem;
-    font-family: "SuperaGothic-UltraBlack";
+    font-family: "SuperaGothic-UltraBlack", sans-serif;
     color: #212020;;
 }
 
@@ -60,8 +73,7 @@
     margin-bottom: 5vh;
     padding: 10px;
     color: white;
-    font-family: "Supera Gothic Regular";
-    src: url("fonts/SuperaGothic-Regular.otf");
+    font-family: "Supera Gothic Regular", sans-serif;
     line-height: 3px;
     transition: ease-in-out 0.8s;
     transition-delay: 0.12s;
@@ -73,8 +85,7 @@
     margin-left: 7vh;
     padding: 10px;
     color: white;
-    font-family: "Supera Gothic Regular";
-    src: url("fonts/SuperaGothic-Regular.otf");
+    font-family: "Supera Gothic Regular", sans-serif;
     opacity: 0;
     transition: ease-in-out 0.4s;
     transition-delay: 0.10s;
@@ -85,33 +96,6 @@
     transform: rotate(270deg);
     transition: all ease-in-out 0.5s;
 }
-/*.letters--scroll--disable{
-    opacity: 0;
-    font-family: 'Supera Gothic', 'Arial';
-    font-size: 0.8rem;
-    position: absolute;
-    left: 6vw;
-    top: 79vh;
-    transform: rotate(270deg) translate(-50%,-50%);
-    color: white;
-    transition: all ease-in-out 0.3s;
-}*/
-/*.link{
-    opacity: 1;
-    color: white;
-    position: absolute;
-    left: 1.5vw;
-    top: 84.5vh;
-    transform: translate(-50%, -50%);
-}
-.disable--arrow{
-    opacity: 0;
-    color: white;
-    position: absolute;
-    left: 1.5vw;
-    top: 84.5vh;
-    transform: translate(-50%, -50%);
-}*/
 @-webkit-keyframes hang-on-hover {
     0% {
         -webkit-transform: translateY(8px);
@@ -176,69 +160,56 @@
     animation-direction: normal, alternate;
 }
 
+.content{
+    position: absolute;
+    width: 50vw;
+    top: 35vh;
+    left: 30vw;
+    transform: translate(-50%, -50%);
+    margin-left: 50px;
+    display: inline-grid;
+}
 .letters--about{
-    opacity: 0 ;
-    font-family: "Supera Gothic ExtraBold", 'Arial';
+    opacity: 0;
+    font-family: "Supera Gothic ExtraBold", sans-serif;
     font-size: 1.8rem;
     line-height: 7px;
-    position: absolute;
-    left: 30vw;
-    top: 32vh;
-    transform: translate(-50%,-50%);
-    transition: all ease 0.3s;
-    transition-delay: 0.1s;
-    color: #212020;
     text-align: left;
+    transition: all ease-in-out 0.4s;
+}
+.letters--about--movement{
+    margin-left: 10vw;
+    font-family: "Supera Gothic ExtraBold", sans-serif;
+    font-size: 1.8rem;
+    line-height: 7px;
+    text-align: left;
+    transition: all ease-in-out 0.6s;
+    transition-delay: 0.8s;
 }
 .letters--white{
     color: white;
 }
-.letters--about--movement{
-    opacity: 1;
-    font-family: "Supera Gothic ExtraBold", 'Arial';
-    font-size: 1.8rem;
-    line-height: 7px;
-    position: absolute;
-    left: 30vw;
-    top: 37vh;
-    transform: translate(-50%,-50%);
-    transition: all ease 0.7s;
-    transition-delay: 1s;
-    text-align: left;
-}
+
 .content--about{
     opacity: 0;
+    margin-left: 20vw;
     display: flex;
-    position: absolute;
-    width: 34.8rem;
-    left: 24vw;
-    top: 49vh;
-    transform: translate(-50%,-50%);
-    font-family: "Supera Gothic", 'Arial';
-    font-size: 1.1rem;
-    line-height: 1px;
-    text-align: left;
-    margin-top: 7px;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.3s;
 }
 .content--about--movement{
+    margin-left: 10vw;
     display: flex;
-    position: absolute;
-    width: 34.8rem;
-    left: 30vw;
-    top: 49vh;
-    transform: translate(-50%,-50%);
-    font-family: "Supera Gothic", 'Arial';
-    font-size: 1.1rem;
-    line-height: 1px;
-    text-align: left;
-    margin-top: 7px;
-    transition: all ease-in-out 0.5s;
-    transition-delay: 1.1s;
-}
-.info--netflix--white{
-    color: white;
+    transition: all ease-in-out 0.6s;
+    transition-delay: 0.8s;
 }
 .info--netflix{
     padding-left: 5px;
+    font-family: "Supera Gothic Light", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1px;
+    text-align: left;
+}
+.info--netflix--white{
+    margin-top: 13px;
+    color: white;
 }
