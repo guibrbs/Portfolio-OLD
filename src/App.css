@@ -54,18 +54,38 @@
     font-family: "SuperaGothic-UltraBlack";
     color: #212020;;
 }
-.letters--scroll{
-    opacity: 1;
-    font-family: 'Supera Gothic', 'Arial';
-    font-size: 0.8rem;
-    position: absolute;
-    left: 1.5vw;
-    top: 79vh;
-    transform: rotate(270deg) translate(-50%,-50%);
+
+.scroll{
+    margin-top: 81vh;
+    margin-bottom: 5vh;
+    padding: 10px;
     color: white;
+    font-family: "Supera Gothic Regular";
+    src: url("fonts/SuperaGothic-Regular.otf");
+    line-height: 3px;
+    transition: ease-in-out 0.8s;
+    transition-delay: 0.12s;
+}
+.scroll--disable{
+    position: absolute;
+    margin-top: 81vh;
+    margin-bottom: 5vh;
+    margin-left: 7vh;
+    padding: 10px;
+    color: white;
+    font-family: "Supera Gothic Regular";
+    src: url("fonts/SuperaGothic-Regular.otf");
+    opacity: 0;
+    transition: ease-in-out 0.4s;
+    transition-delay: 0.10s;
+    line-height: 3px;
+}
+.letters--scroll{
+    font-size: 0.8rem;
+    transform: rotate(270deg);
     transition: all ease-in-out 0.5s;
 }
-.letters--scroll--disable{
+/*.letters--scroll--disable{
     opacity: 0;
     font-family: 'Supera Gothic', 'Arial';
     font-size: 0.8rem;
@@ -75,8 +95,8 @@
     transform: rotate(270deg) translate(-50%,-50%);
     color: white;
     transition: all ease-in-out 0.3s;
-}
-.link{
+}*/
+/*.link{
     opacity: 1;
     color: white;
     position: absolute;
@@ -91,7 +111,7 @@
     left: 1.5vw;
     top: 84.5vh;
     transform: translate(-50%, -50%);
-}
+}*/
 @-webkit-keyframes hang-on-hover {
     0% {
         -webkit-transform: translateY(8px);

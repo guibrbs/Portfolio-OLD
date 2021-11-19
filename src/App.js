@@ -6,6 +6,7 @@ import './App.css';
 export default () => {
 
     const [movement, setMovement] = useState(false);
+    /*const [limitScroll, setLimitScroll] = useState(false);*/
 
     useEffect(() => {
         const scrollListener = () => {
@@ -20,12 +21,27 @@ export default () => {
         }
     }, []);
 
+    /*useEffect(()=>{
+        const scrollListener2 = () => {
+            if(window.scrollY > 10)
+                setLimitScroll(true);
+            else
+                setLimitScroll(false);
+        }
+        window.addEventListener('scroll', scrollListener2);
+        return () => {
+            window.removeEventListener('scroll', scrollListener2);
+        }
+    }, []);*/
+
     return (
         <section>
             <div className={"white--margin"}/>
             <div className={movement ? "rectangle--movement" : "rectangle"}>
-                <p className={movement ? "letters--scroll--disable" : "letters--scroll"}>scroll</p>
-                <ArrowDownwardIcon className={movement ? "disable--arrow" : "link hang-on-hover"} style={{fontSize: 15}}></ArrowDownwardIcon>
+                <div className={movement ? "scroll--disable" : "scroll"}>
+                    <p className={"letters--scroll"}>scroll</p>
+                    <ArrowDownwardIcon className={"link hang-on-hover"} style={{fontSize: 15}}></ArrowDownwardIcon>
+                </div>
                 <div className={movement ? "letters--about--movement" : "letters--about"}>
                     <p>Me chamo Guilherme Barbosa Ferreira</p>
                     <p className={"letters--white"}>e este é o meu portfólio, onde poderá </p>
