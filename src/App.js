@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import './App.css';
+import Apresentation from "./Apresentation";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
 
     const [movement, setMovement] = useState(false);
-    /*const [limitScroll, setLimitScroll] = useState(false);*/
 
     useEffect(() => {
         const scrollListener = () => {
@@ -21,19 +21,6 @@ export default () => {
         }
     }, []);
 
-    /*useEffect(()=>{
-        const scrollListener2 = () => {
-            if(window.scrollY > 10)
-                setLimitScroll(true);
-            else
-                setLimitScroll(false);
-        }
-        window.addEventListener('scroll', scrollListener2);
-        return () => {
-            window.removeEventListener('scroll', scrollListener2);
-        }
-    }, []);*/
-
     return (
         <section>
             <div className={"white--margin"}/>
@@ -44,9 +31,9 @@ export default () => {
                 </div>
                 <div className={"content"}>
                     <div className={movement ? "letters--about--movement" : "letters--about"}>
-                        <p>Me chamo Guilherme Barbosa Ferreira</p>
+                        <p className={"letters--white"}>Me chamo <strong><span style={{color: '#212020'}}>Guilherme Barbosa Ferreira</span></strong></p>
                         <p className={"letters--white"}>e este é o meu portfólio, onde poderá </p>
-                        <p className={"letters--white"}>encontrar alguns projetos meus!</p>
+                        <p className={"letters--white"}>encontrar alguns de meus projetos.</p>
                     </div>
                     <div className={movement ? "content--about--movement" : "content--about"}>
                         <a href={"https://guibrbs.github.io/ProjetoNetflix/"}>
@@ -54,8 +41,21 @@ export default () => {
                                 src={"https://www.caviarcriativo.com/wp-content/uploads/2020/06/Significados-da-Marca-Netflix.gif"}
                                 alt={"Clone Netflix"} width={150}/>
                         </a>
-                        <div className={"info--netflix"}>
-                            <p className={"info--netflix--white"}>Clone Netflix</p>
+                        <div className={"info"}>
+                            <p id={"white"}>Clone Netflix</p>
+                            <p>React Js</p>
+                            <p>HTML</p>
+                            <p>CSS3</p>
+                        </div>
+                    </div>
+                    <div className={movement ? "content--about--movement" : "content--about"}>
+                        <a href={"https://guibrbs.github.io/calculadora/"}>
+                            <img
+                                src={"https://media.giphy.com/media/3o85xFdBA27p6TJWgM/giphy.gif"}
+                                alt={"Calculator"} width={150} height={90}/>
+                        </a>
+                        <div className={"info"}>
+                            <p id={"white"}>Calculator</p>
                             <p>React Js</p>
                             <p>HTML</p>
                             <p>CSS3</p>
@@ -64,8 +64,7 @@ export default () => {
                 </div>
             </div>
             <div className={movement ? "letters--apresentation--movement" : "letters--apresentation"}>
-                <h1 className={"letters--style"}>O</h1>
-                <h1 className={"letters--style"}>LÁ</h1>
+                <Apresentation trueMoviment={movement}/>
             </div>
         </section>
     )

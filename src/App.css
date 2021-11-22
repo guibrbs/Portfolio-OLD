@@ -20,7 +20,9 @@
     margin: 50px;
     width: 47.5vw;
     height: 90vh;
-    background-color: #bc4b51;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: ease-in-out 0.7s;
     transition-delay: 0.25s;
 }
@@ -39,7 +41,9 @@
     margin: 50px;
     width: 94vw;
     height: 90vh;
-    background-color: #bc4b51;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: ease-in-out 0.7s;
     transition-delay: 0.25s;
 }
@@ -48,24 +52,16 @@
     left: 49%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: ease-in-out 0.7s;
+    transition: all ease-in-out 0.7s;
     transition-delay: 0.25s;
-
 }
 .letters--apresentation--movement{
     position: absolute;
     left: 95%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: ease-in-out 0.7s;
+    transition: all ease-in-out 0.7s;
     transition-delay: 0.25s;
-}
-.letters--style{
-    line-height: 5px;
-    text-align: left;
-    font-size: 15rem;
-    font-family: "SuperaGothic-UltraBlack", sans-serif;
-    color: #212020;;
 }
 
 .scroll{
@@ -192,7 +188,6 @@
 .letters--white{
     color: white;
 }
-
 .content--about{
     opacity: 0;
     margin-left: 20vw;
@@ -205,14 +200,14 @@
     transition: all ease-in-out 0.6s;
     transition-delay: 0.8s;
 }
-.info--netflix{
+.info{
     padding-left: 5px;
     font-family: "Supera Gothic Light", sans-serif;
     font-size: 1.1rem;
     line-height: 1px;
     text-align: left;
 }
-.info--netflix--white{
+#white{
     margin-top: 13px;
     color: white;
 }
@@ -229,16 +224,15 @@
     }
 }
 
-/* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 1600px) {
     .letters--about, .letters--about--movement{
         font-size: 1.2rem;
     }
 }
 
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 1280px) {
     .letters--about, .letters--about--movement{
         font-size: 1rem;
     }
 }
+
