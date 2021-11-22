@@ -170,6 +170,7 @@
 }
 .letters--about{
     opacity: 0;
+    cursor: default;
     font-family: "Supera Gothic ExtraBold", sans-serif;
     font-size: 1.8rem;
     line-height: 7px;
@@ -189,6 +190,7 @@
     color: white;
 }
 .content--about{
+    pointer-events: none;
     opacity: 0;
     margin-left: 20vw;
     display: flex;
