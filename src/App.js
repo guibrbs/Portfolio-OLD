@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 import './App.css';
 import Apresentation from "./Apresentation";
 
@@ -23,7 +25,12 @@ export default () => {
 
     return (
         <section>
-            <div className={"white--margin"}/>
+            <div className={"white--margin"}>
+
+                {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
+                <a href={"https://github.com/guibrbs"} style={{color: "black"}}><GitHubIcon className={"icons"} style={{fontSize: 32}}/></a>
+                <a href={"mailto: mrguilhermeferreira@gmail.com"} style={{color: "black"}}><EmailIcon className={"icons"} style={{fontSize: 32}}/></a>
+            </div>
             <div className={movement ? "rectangle--movement" : "rectangle"}>
                 <div className={movement ? "scroll--disable" : "scroll"}>
                     <p className={"letters--scroll"}>scroll</p>
@@ -31,7 +38,8 @@ export default () => {
                 </div>
                 <div className={"content"}>
                     <div className={movement ? "letters--about--movement" : "letters--about"}>
-                        <p className={"letters--white"}>Me chamo <strong><span style={{color: '#212020'}}>Guilherme Barbosa Ferreira</span></strong></p>
+                        <p className={"letters--white"}>Me chamo
+                            <strong><span style={{color: '#212020'}}> Guilherme Barbosa Ferreira</span></strong></p>
                         <p className={"letters--white"}>e este é o meu portfólio, onde poderá </p>
                         <p className={"letters--white"}>encontrar alguns de meus projetos.</p>
                     </div>

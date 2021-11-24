@@ -2,52 +2,70 @@
     font-family: 'SuperaGothic-UltraBlack';
     src: url('fonts/SuperaGothic-UltraBlack.otf');
 }
+
 @font-face {
     font-family: "Supera Gothic Regular";
     src: url("fonts/SuperaGothic-Regular.otf");
 }
+
 @font-face {
     font-family: "Supera Gothic ExtraBold";
     src: url("fonts/SuperaGothic-ExtraBold.otf");
 }
+
 @font-face {
     font-family: "Supera Gothic Light";
     src: url("fonts/SuperaGothic-Light.otf");
 }
-.rectangle{
+
+.rectangle {
     display: flex;
     position: relative;
     margin: 50px;
     width: 47.5vw;
     height: 90vh;
-    background: #11998e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #11998e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #38ef7d, #11998e); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: ease-in-out 0.7s;
     transition-delay: 0.25s;
 }
-.white--margin{
+
+.white--margin {
+    display: inline-grid;
     z-index: 999;
     width: 3vw;
     height: 90vh;
     background-color: #F0F8EA;
     position: absolute;
     left: 96.5vw;
-
+    align-items: center;
+    align-content: center;
 }
-.rectangle--movement{
+
+.icons {
+    padding: 10px;
+}
+
+.icons:hover {
+    color: #34b05f;
+    transition: color 0.5s;
+}
+
+.rectangle--movement {
     display: flex;
     position: relative;
     margin: 50px;
     width: 94vw;
     height: 90vh;
-    background: #11998e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #11998e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #38ef7d, #11998e); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: ease-in-out 0.7s;
     transition-delay: 0.25s;
 }
-.letters--apresentation{
+
+.letters--apresentation {
     position: absolute;
     left: 49%;
     top: 50%;
@@ -55,7 +73,8 @@
     transition: all ease-in-out 0.7s;
     transition-delay: 0.25s;
 }
-.letters--apresentation--movement{
+
+.letters--apresentation--movement {
     position: absolute;
     left: 95%;
     top: 50%;
@@ -64,7 +83,7 @@
     transition-delay: 0.25s;
 }
 
-.scroll{
+.scroll {
     margin-top: 81vh;
     margin-bottom: 5vh;
     padding: 10px;
@@ -74,7 +93,8 @@
     transition: ease-in-out 0.8s;
     transition-delay: 0.12s;
 }
-.scroll--disable{
+
+.scroll--disable {
     position: absolute;
     margin-top: 81vh;
     margin-bottom: 5vh;
@@ -87,14 +107,17 @@
     transition-delay: 0.10s;
     line-height: 3px;
 }
-.letters--scroll{
+
+.letters--scroll {
     font-size: 0.8rem;
     transform: rotate(270deg);
     transition: all ease-in-out 0.5s;
 }
-.link{
+
+.link {
     padding-bottom: 5vh;
 }
+
 @-webkit-keyframes hang-on-hover {
     0% {
         -webkit-transform: translateY(8px);
@@ -109,6 +132,7 @@
         transform: translateY(8px);
     }
 }
+
 @keyframes hang-on-hover {
     0% {
         -webkit-transform: translateY(8px);
@@ -123,18 +147,21 @@
         transform: translateY(12px);
     }
 }
+
 @-webkit-keyframes hang-on-hover-sink {
     100% {
         -webkit-transform: translateY(8px);
         transform: translateY(12px);
     }
 }
+
 @keyframes hang-on-hover-sink {
     100% {
         -webkit-transform: translateY(8px);
         transform: translateY(12px);
     }
 }
+
 .hang-on-hover {
     display: inline-block;
     vertical-align: middle;
@@ -142,6 +169,7 @@
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .hang-on-hover, .hang-on-hover:focus, .hang-on-hover:active {
     -webkit-animation-name: hang-on-hover-sink, hang-on-hover;
     animation-name: hang-on-hover-sink, hang-on-hover;
@@ -159,7 +187,7 @@
     animation-direction: normal, alternate;
 }
 
-.content{
+.content {
     position: absolute;
     width: 60vw;
     top: 35vh;
@@ -168,7 +196,8 @@
     margin-left: 50px;
     display: inline-grid;
 }
-.letters--about{
+
+.letters--about {
     opacity: 0;
     cursor: default;
     font-family: "Supera Gothic ExtraBold", sans-serif;
@@ -177,7 +206,8 @@
     text-align: left;
     transition: all ease-in-out 0.4s;
 }
-.letters--about--movement{
+
+.letters--about--movement {
     margin-left: 10vw;
     font-family: "Supera Gothic ExtraBold", sans-serif;
     font-size: 1.8rem;
@@ -186,54 +216,59 @@
     transition: all ease-in-out 0.6s;
     transition-delay: 0.8s;
 }
-.letters--white{
+
+.letters--white {
     color: white;
 }
-.content--about{
+
+.content--about {
     pointer-events: none;
     opacity: 0;
     margin-left: 20vw;
     display: flex;
     transition: all ease-in-out 0.3s;
 }
-.content--about--movement{
+
+.content--about--movement {
     margin-left: 10vw;
     display: flex;
     transition: all ease-in-out 0.6s;
     transition-delay: 0.8s;
 }
-.info{
+
+.info {
     padding-left: 5px;
     font-family: "Supera Gothic Light", sans-serif;
     font-size: 1.1rem;
     line-height: 1px;
     text-align: left;
 }
-#white{
+
+#white {
     margin-top: 13px;
     color: white;
 }
 
 @media only screen and (max-width: 1900px) {
-    .letters--about, .letters--about--movement{
+    .letters--about, .letters--about--movement {
         font-size: 1.8rem;
     }
 }
 
 @media only screen and (min-width: 1601px) and (max-width: 1680px) {
-    .letters--about, .letters--about--movement{
+    .letters--about, .letters--about--movement {
         font-size: 1.6rem;
     }
 }
 
 @media only screen and (max-width: 1600px) {
-    .letters--about, .letters--about--movement{
+    .letters--about, .letters--about--movement {
         font-size: 1.2rem;
     }
 }
 
 @media only screen and (max-width: 1280px) {
-    .letters--about, .letters--about--movement{
+    .letters--about, .letters--about--movement {
         font-size: 1rem;
     }
 }
