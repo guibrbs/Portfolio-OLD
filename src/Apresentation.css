@@ -17,7 +17,6 @@
     font-family: "SuperaGothic-UltraBlack", sans-serif;
     color: #212020;
     transition: all ease 0.5s;
-
     -webkit-animation-name: hvr-wobble-vertical;
     animation-name: hvr-wobble-vertical;
     -webkit-animation-duration: 1s;
@@ -92,4 +91,23 @@
         transform: translateY(0) ;
     }
 }
-
+@media screen and (max-width: 1680px){
+    .hvr-wobble-vertical, .squish, .movement{
+        font-size: 13rem;
+    }
+}
+@media only screen and (max-width: 1600px){
+    .hvr-wobble-vertical, .squish, .movement{
+        font-size: 13rem;
+    }
+}
+@media only screen and (max-width: 1280px){
+    .hvr-wobble-vertical, .squish, .movement{
+        font-size: 11rem;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .hvr-wobble-vertical, .squish, .movement{
+        font-size: 9rem;
+    }
+}
