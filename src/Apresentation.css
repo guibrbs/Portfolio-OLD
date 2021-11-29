@@ -7,8 +7,9 @@
     transition: all ease 0.2s;
 }
 .squish:hover{
-    transform: scaleY(0.8);
-    transition: all ease 0.5s;
+    -webkit-transform: scaleY(0.8);
+    transform: scale(1,.85);
+    transition: ease-in-out 0.2s;
 }
 .hvr-wobble-vertical{
     line-height: 5px;
@@ -17,14 +18,25 @@
     font-family: "SuperaGothic-UltraBlack", sans-serif;
     color: #212020;
     transition: all ease 0.5s;
-    -webkit-animation-name: hvr-wobble-vertical;
-    animation-name: hvr-wobble-vertical;
-    -webkit-animation-duration: 1s;
-    animation-duration: 0.7s;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
+    animation-name: bounce-out;
+    animation-timing-function: ease;
+    animation-duration: 0.5s;
+   
+}
+@keyframes bounce-out{
+    0% {
+        -webkit-transform: scale(1,.85);
+        transform: scale(1,.85);
+    }
+    
+    50% {
+        -webkit-transform: scale(.85,1.15);
+        transform: scale(.85,1.15);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 .movement{
     margin-top: 0;
@@ -38,58 +50,6 @@
 .together{
     display: inline-block;
     margin-top: 0;
-}
-@-webkit-keyframes hvr-wobble-vertical {
-    16.65% {
-        -webkit-transform: translateY(8px) scaleY(0.8);
-        transform: translateY(8px);
-    }
-    33.3% {
-        -webkit-transform: translateY(-6px) scaleY(0.7);
-        transform: translateY(-6px);
-    }
-    49.95% {
-        -webkit-transform: translateY(4px) scaleY(0.7);
-        transform: translateY(4px);
-    }
-    66.6% {
-        -webkit-transform: translateY(-2px);
-        transform: translateY(-2px);
-    }
-    83.25% {
-        -webkit-transform: translateY(1px);
-        transform: translateY(1px);
-    }
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-@keyframes hvr-wobble-vertical {
-    16.65% {
-        -webkit-transform: translateY(8px) scaleY(0.8);
-        transform: translateY(8px);
-    }
-    33.3% {
-        -webkit-transform: translateY(-6px) scaleY(0.7);
-        transform: translateY(-6px);
-    }
-    49.95% {
-        -webkit-transform: translateY(4px) scaleY(0.7);
-        transform: translateY(4px);
-    }
-    66.6% {
-        -webkit-transform: translateY(-2px) scaleY(0.7);
-        transform: translateY(-2px);
-    }
-    83.25% {
-        -webkit-transform: translateY(1px) scaleY(0.7);
-        transform: translateY(1px);
-    }
-    100% {
-        -webkit-transform: translateY(0) scaleY(0.7);
-        transform: translateY(0) ;
-    }
 }
 @media screen and (max-width: 1680px){
     .hvr-wobble-vertical, .squish, .movement{
