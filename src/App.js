@@ -7,7 +7,6 @@ import Apresentation from "./Apresentation";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-
     const [movement, setMovement] = useState(false);
     const projects = [
         {
@@ -46,7 +45,7 @@ export default () => {
     }, []);
 
     return (
-        <section>
+        <section className={"section"}>
             <div className={"white--margin"}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
                 <a href={"https://github.com/guibrbs"} target={"_blank"} rel={"noreferrer"} style={{color: "black"}}><GitHubIcon className={"icons"} style={{fontSize: 32}}/></a>

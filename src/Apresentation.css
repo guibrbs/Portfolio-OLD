@@ -61,7 +61,7 @@
         font-size: 13rem;
     }
 }
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1366px){
     .hvr-wobble-vertical, .squish, .movement{
         font-size: 11rem;
     }
