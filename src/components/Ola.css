@@ -1,0 +1,40 @@
+
+.item {
+    width: 170%;
+    overflow: visible;
+    stroke: #212020;
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.letters--apresentation {
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out 0.7s;
+    transition-delay: 0.25s;
+}
+
+@media screen and (max-width: 1680px){
+    .hvr-wobble-vertical, .squish, .movement{
+        font-size: 13rem;
+    }
+}
+@media only screen and (max-width: 1600px){
+    .hvr-wobble-vertical, .squish, .movement{
+        font-size: 13rem;
+    }
+}
+@media only screen and (max-width: 1366px){
+    .hvr-wobble-vertical, .squish, .movement{
+        font-size: 11rem;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .hvr-wobble-vertical, .squish, .movement{
+        font-size: 9rem;
+    }
+}

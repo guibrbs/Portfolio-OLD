@@ -1,0 +1,108 @@
+.container{
+    display: flex;
+    height: 30vh;
+    width: max-content;
+    margin-left: 10vw;
+}
+.On{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all ease-in-out 0.6s;
+    transition-delay: 2.1s;
+}
+.Off{
+    transform: translateY(25%);
+    transition: all ease-in-out 0.2s;
+    opacity: 0;
+}
+.body--card{
+    display: flex;
+    margin-right: 2vw;
+    position: relative;
+    color: white;
+    background: #212020;
+    width: 13vw;
+    height: 20vh;
+    text-align: left;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 400ms ease;
+    transform-origin: top;
+}
+
+.body--card--off {
+    opacity: 0;
+}
+
+.body--card:hover{
+    height: 35vh;
+    transform: scale(1.1);
+}
+
+.img{
+    position: absolute;
+    margin-top: 40px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+}
+.card{
+    position: absolute;
+    bottom: 0;
+    padding: 10px 10px 25px 20px;
+    transform: translateY(65%);
+    transition: transform 400ms ease;
+}
+.card > *:not(.card-title){
+    opacity: 0;
+    transition: opacity 400ms linear;
+}
+
+.body--card:hover .card{
+    transform: translateY(0);
+    transition-delay: 400ms;
+}
+.body--card:hover .card > * {
+    opacity: 1;
+}
+.card-title{
+    position: relative;
+    font-family: "Supera Gothic Regular", sans-serif;
+    width: max-content;
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+}
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(20px * -1);
+    bottom: 0;
+    width: calc(100% + 20px);
+    background: linear-gradient(to left, #38ef7d, #11998e);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms ease;
+    margin-bottom: 0;
+}
+.body--card:hover .card-title::after{
+    transform: scaleX(1);
+}
+.card-body{
+    font-family: "Supera Gothic Light", sans-serif;
+    line-height: 1px;
+}
+.button{
+    font-family: "Supera Gothic Regular", sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    background-color: #66ee9a;
+    padding: 0.5em 1.25em;
+    transition: all 2s ease;
+    border-radius: 0.5rem;
+}
+.button:hover, .button:focus{
+    background-color: #66ee9abe;
+    color: white;
+}
