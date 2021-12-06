@@ -41,7 +41,6 @@
 
 .img{
     position: absolute;
-    margin-top: 40px;
     left: 50%;
     margin-right: -50%;
     transform: translateX(-50%);
@@ -103,6 +102,6 @@
     border-radius: 0.5rem;
 }
 .button:hover, .button:focus{
-    background-color: #66ee9abe;
-    color: white;
+    background-color: #11998e;
+    color: rgb(255, 255, 255);
 }
