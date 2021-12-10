@@ -23,8 +23,8 @@ export default props => {
             link: "https://guibrbs.github.io/calculadora/",
             img: "https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/calculator-icon.png",
             name: "Calculator",
-            width: 120,
-            height: 120,
+            width: "50%",
+            height: "50%",
             info: [
                 "React Js",
                 "HTML",
@@ -45,6 +45,18 @@ export default props => {
             ],
             marginTop: "3vh",
         },
+        {
+            link: "https://guibrbs.github.io/Covid-Tracker/",
+            name: "Covid-19 Tracker",
+            width: 115,
+            height: 100,
+            info: [
+                "React Js",
+                "Charts Js",
+                "Material UI"
+            ],
+            marginTop: "3vh",
+        },
     ]
 
     return (
@@ -52,10 +64,12 @@ export default props => {
         {projects.map(project => (
             <div className={props.movement ? "On" : "Off"} key={project.name}>
                 <div className={"body--card"}>
-                    <img className="img" src={project.img} alt={project.name} width={project.width} height={project.height} style={{marginTop: project.marginTop}}/>
+                    {/* <img className="img" src={project.img} alt={project.name} width={project.width} 
+                        height={project.height} style={{marginTop: project.marginTop}}
+                    /> */}
                     <div className="card">
                         <h2 className="card-title">{project.name}</h2>
-                        <p className="card-body">
+                        <p className="card-content">
                             {project.info.map(info => (
                                 <p>{info}</p>
                             ))} 

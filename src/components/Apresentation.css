@@ -36,12 +36,12 @@
 
 @media only screen and (max-width: 1600px) {
     .letters--about, .letters--about--movement {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 }
 
 @media only screen and (max-width: 1280px) {
     .letters--about, .letters--about--movement {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }

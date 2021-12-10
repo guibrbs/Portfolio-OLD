@@ -19,22 +19,22 @@
 }
 
 @media screen and (max-width: 1680px){
-    .hvr-wobble-vertical, .squish, .movement{
-        font-size: 13rem;
+    .item{
+        width: 170%;
     }
 }
 @media only screen and (max-width: 1600px){
-    .hvr-wobble-vertical, .squish, .movement{
-        font-size: 13rem;
+    .item{
+        width: 150%;
     }
 }
 @media only screen and (max-width: 1366px){
-    .hvr-wobble-vertical, .squish, .movement{
-        font-size: 11rem;
+    .item{
+        width: 130%;
     }
 }
 @media only screen and (max-width: 1200px){
-    .hvr-wobble-vertical, .squish, .movement{
-        font-size: 9rem;
+    .item{
+        width: 120%;
     }
 }
