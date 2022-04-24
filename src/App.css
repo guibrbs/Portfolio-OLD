@@ -2,4 +2,12 @@
     width: 100vw;
     min-height: 100vh;
     background-color: var(--backgroundColor);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid black;
 }
