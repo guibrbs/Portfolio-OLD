@@ -10,7 +10,10 @@ export default function Header() {
                 <a href="/" className="links">Projetos</a>
                 <a href="/" className="links">Sobre</a>
             </div>
-            <i>moon</i>
+            <div className="icon">
+                <i className="fa-solid fa-moon"></i>
+                <i className="fa-solid fa-sun"></i>
+            </div>
         </header>
     )
 }
