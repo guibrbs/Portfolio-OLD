@@ -9,11 +9,13 @@
 .light{
     --backgroundColor: #f6f6f6;
     --primary-color: #282828;
+    --elementary-color: #f0f0f0;
     --secondary-color: #EDEDED;
 }
 
 .dark{
     --backgroundColor: #131313;
     --primary-color: #EDEDED;
+    --elementary-color: #1f1f1f;
     --secondary-color: #111111;
 }
