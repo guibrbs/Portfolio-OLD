@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    border: 1px solid black;
 }
 
 a{
@@ -21,6 +20,18 @@ a{
 .links-wrapper{
     display: flex;
     flex-direction: row;
+}
+
+.links-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 23rem;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    margin-top: 3.5rem;
+    background-color: var(--line-color);
 }
 
 .links{
