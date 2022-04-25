@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles.css'
 
 export default function Header({setProps}: {setProps: any}) {
+    const [isActive, setActive] = useState(false);
+    const toggleClass = () => {
+        setActive(!isActive)
+        setProps(isActive)
+    }
     return(
         <header className="header">
             <a href="/" className="logo">GBF</a>
@@ -10,9 +15,9 @@ export default function Header({setProps}: {setProps: any}) {
                 <a href="/" className="links">Projetos</a>
                 <a href="/" className="links">Sobre</a>
             </div>
-            <div className="icon">
-                <i className="fa-solid fa-moon" onClick={(e) => setProps(0)}></i>
-                <i className="fa-solid fa-sun" onClick={(e) => setProps(1)}></i>
+            <div className="icon" onClick={toggleClass}>
+                <i className="fa-solid fa-moon" ></i>
+                <i className="fa-solid fa-sun" ></i>
             </div>
         </header>
     )
