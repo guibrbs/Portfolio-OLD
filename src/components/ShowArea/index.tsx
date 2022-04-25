@@ -11,10 +11,10 @@ export default function ShowArea({props}: {props: any}){
                 <h2>Olá, me chamo</h2>
                 <h1 className="nome">Guilherme Barbosa</h1>
                 <p>Sou estudante de <b><i>Engenharia de Software</i></b> pela <b><i>Universidade de Brasília.</i></b> Esse é o meu portfólio, 
-                    onde você consegue encontrar alguns de meus projetos como <b><i>Desenvolvedor Web.</i></b> 
+                    onde você consegue encontrar alguns de meus projetos como <b><i>Desenvolvedor Web. </i></b> 
                     Se estiver procurando alguém <b><i>competente e focado</i></b>, hoje é seu dia de sorte, pois esse sou eu!
                 </p>
-                <button className="btn">Entre em contato</button>
+                <p className="btn">Entre em contato</p>
             </div>
             <div className={"img"}>
                 <img src={LightStatic} id="img" className={props ? "static img-style" : "static img-style imgOff"}/> 
