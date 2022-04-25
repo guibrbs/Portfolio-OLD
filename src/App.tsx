@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Home from './pages/Home'
 
 function App() {
-
+  const [theme, setTheme] = useState(0)
   return (
-    <div className="container dark">
+    <div className={theme ? "container light" : "container dark"}>
       <div className="wrapper">
-        <Home />
+        <Home mode={setTheme}/>
       </div>
     </div>
   )

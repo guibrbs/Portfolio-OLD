@@ -1,7 +1,7 @@
 import React from "react";
 import './styles.css'
 
-export default function Header() {
+export default function Header({setProps}: {setProps: any}) {
     return(
         <header className="header">
             <a href="/" className="logo">GBF</a>
@@ -11,8 +11,8 @@ export default function Header() {
                 <a href="/" className="links">Sobre</a>
             </div>
             <div className="icon">
-                <i className="fa-solid fa-moon"></i>
-                <i className="fa-solid fa-sun"></i>
+                <i className="fa-solid fa-moon" onClick={(e) => setProps(0)}></i>
+                <i className="fa-solid fa-sun" onClick={(e) => setProps(1)}></i>
             </div>
         </header>
     )
