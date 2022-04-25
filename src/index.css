@@ -10,6 +10,7 @@
     --backgroundColor: #f6f6f6;
     --primary-color: #282828;
     --elementary-color: #f0f0f0;
+    --line-color: #CFCFCF;
     --secondary-color: #EDEDED;
 }
 
@@ -17,5 +18,6 @@
     --backgroundColor: #131313;
     --primary-color: #EDEDED;
     --elementary-color: #1f1f1f;
+    --line-color: #515151;
     --secondary-color: #111111;
 }
