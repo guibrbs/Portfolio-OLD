@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
+import ShowArea from "../components/ShowArea";
 
 export default function Home({ mode }: { mode:any }){
-    const [theme, setTheme] = useState(0)
+    const [theme, setTheme] = useState(false)
     function setModel(){
         return mode(theme)
     }
     return(
-        <div>
+        <>
             {setModel()}
             <Header setProps={setTheme}/>
-        </div>
+            <ShowArea props={theme}/>
+        </>
     )
 }
