@@ -14,11 +14,14 @@ export default function ShowArea({props}: {props: any}){
                     onde você consegue encontrar alguns de meus projetos como <b><i>Desenvolvedor Web. </i></b> 
                     Se estiver procurando alguém <b><i>competente e focado</i></b>, hoje é seu dia de sorte, pois esse sou eu!
                 </p>
-                <p className="btn">Entre em contato</p>
+                <div className="btn-area">
+                    <p className="btn">Entre em contato</p>
+                    <a href="https://github.com/guibrbs" target={"_blank"} rel={"noreferrer noopener"} className="social"><i className="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/guibrbs/" className="social" target={"_blank"} rel={"noreferrer noopener"}><i className="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
             <div className={"img"}>
-                <img src={LightStatic} id="img" className={props ? "static img-style" : "static img-style imgOff"}/> 
-                <img src={LightGif} id="img" className={props ? "img-style" : "img-style imgOff"}/>                
+                <img src={LightStatic} id="img" className={props ? "static img-style" : "static img-style imgOff"}/>               
                 <img src={Dark} id="img" alt="Illustration Dark" className={props ? "img-style imgOff" : "img-style"}/>
             </div>
         </div>

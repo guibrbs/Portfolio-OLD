@@ -56,6 +56,12 @@ p{
     word-spacing: 1.5px;
 }
 
+.btn-area{
+    display: flex;
+    height: 100%;
+    max-height: 70px;
+}
+
 .btn{
     font-family: 'Exo', sans-serif;
     width: fit-content;
@@ -71,6 +77,22 @@ p{
 
 .btn:hover{
     filter: brightness(1.1);
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    width: 3.2rem;
+    margin: 1rem 0 0 1.2rem;
+    font-size: 2.3rem;
+    border-radius: .4rem;
+    transition: ease .3s;
+}
+
+.social:hover{
+    background-color: var(--elementary-color);
 }
 
 .img{
@@ -99,6 +121,6 @@ p{
     border-radius: 14rem;
 }
 
-.static:hover{
+/* .static:hover{
     opacity: 0;
-}
+} */
