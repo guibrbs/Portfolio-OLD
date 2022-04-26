@@ -1,0 +1,14 @@
+.container-projects{
+    margin: 5rem 0 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.projects{
+    width: 25rem;
+    height: 40rem;
+    border: 1px solid var(--line-color);
+    border-radius: 25px;
+    margin: 2rem;
+    overflow: hidden;
+}
