@@ -1,9 +1,22 @@
 
 .showArea{
+    position: relative;
     height: 82vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
+}
+
+.showArea::after{
+    content: '';
+    position: absolute;
+    width: 23rem;
+    height: 1px;
+    background-color: var(--line-color);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .showArea-info{
@@ -102,7 +115,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 11rem;
+    border-radius: 14rem;
 }
 
 .img-style{
@@ -116,11 +129,11 @@ p{
 .static{
     position: absolute;
     width: fit-content;
-    height: fit-content;
+    border-radius: 24rem;
     background-color: var(--backgroundColor);
-    border-radius: 14rem;
+    transition: opacity .2s;
 }
 
-/* .static:hover{
+.static:hover{
     opacity: 0;
-} */
+}
