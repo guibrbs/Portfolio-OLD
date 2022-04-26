@@ -20,7 +20,6 @@
 }
 
 .showArea-info{
-    font-family: 'Exo', sans-serif;
     color: var(--primary-color);
     width: 40rem;
 }
@@ -76,7 +75,6 @@ p{
 }
 
 .btn{
-    font-family: 'Exo', sans-serif;
     width: fit-content;
     margin-top: 1rem;
     padding: 1rem 1.1rem;

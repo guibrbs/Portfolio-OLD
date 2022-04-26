@@ -4,6 +4,7 @@
     background-color: var(--backgroundColor);
     display: flex;
     justify-content: center;
+    font-family: 'Exo', sans-serif;
 }
 
 .wrapper{
