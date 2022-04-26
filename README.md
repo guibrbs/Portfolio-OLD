@@ -1,4 +1,5 @@
-# Olá, esse é o repositório do meu portfólio
+<h1 align=center> Olá, esse é o repositório do meu portfólio </h1>
+
 ## Objetivo:
 Criar um portfólio pessoal utilizando as seguintes tecnologias:
 <div align='center'>
