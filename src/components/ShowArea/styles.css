@@ -129,7 +129,7 @@ p{
     width: fit-content;
     border-radius: 16.5rem;
     background-color: var(--backgroundColor);
-    transition: opacity .2s;
+    transition: ease-in-out 5s linear 1s;
 }
 
 .static:hover{
