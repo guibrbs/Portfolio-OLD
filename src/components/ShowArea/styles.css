@@ -127,7 +127,7 @@ p{
 .static{
     position: absolute;
     width: fit-content;
-    border-radius: 24rem;
+    border-radius: 16.5rem;
     background-color: var(--backgroundColor);
     transition: opacity .2s;
 }
