@@ -2,7 +2,8 @@ import React from "react";
 import './styles.css'
 import LightGif from '../../assets/images/light-animated.gif'
 import LightStatic from '../../assets/images/light-static.png'
-import Dark from  '../../assets/images/dark-animated.gif'
+import DarkGif from  '../../assets/images/dark-animated.gif'
+import DarkStatic from '../../assets/images/dark-static.png'
 
 export default function ShowArea({props}: {props: any}){
     return(
@@ -21,8 +22,10 @@ export default function ShowArea({props}: {props: any}){
                 </div>
             </div>
             <div className={"img"}>
-                <img src={LightStatic} id="img" className={props ? "static img-style" : "static img-style imgOff"}/>               
-                <img src={Dark} id="img" alt="Illustration Dark" className={props ? "img-style imgOff" : "img-style"}/>
+                <img src={LightStatic} id="img" className={props ? "img-style static" : "static img-style imgOff"}/> 
+                <img src={LightGif} id="img" className={props ? "img-style" : "img-style imgOff"}/>      
+                <img src={DarkStatic} id="img" className={props ? "img-style static imgOff" : "static img-style"}/>        
+                <img src={DarkGif} id="img" alt="Illustration Dark" className={props ? "img-style imgOff" : "img-style"}/>
             </div>
         </div>
     )
