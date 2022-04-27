@@ -27,7 +27,11 @@ export default function Projects() {
                     <a href="">
                         <img src={SignIn} alt="image-sign-in" className="imgs"/>
                         <div className="content-project">
-
+                            <h2 className="description-project"><b>Sign in | Sign up</b></h2>
+                            <p className="description-project">Mini projeto pessoal com o objetivo de aprimorar as habilidades técnicas
+                                no qual envolve o desenvolvimento de formulários de sign in e sign up, alternando entre si com animações sem nenhum framework. 
+                            </p>
+                            <p className="description-project">Saiba mais</p>
                         </div>
                     </a>
                 </div>

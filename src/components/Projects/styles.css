@@ -104,6 +104,7 @@
 
 h2.description-project{
     font-size: 1.8rem;
+    font-weight: 700;
 }
 
 p.description-project{
@@ -114,6 +115,6 @@ p.description-project{
 
 p.description-project:last-child{
     padding-top: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.4rem;
 }
