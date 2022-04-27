@@ -1,14 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './styles.css'
 
 export default function Header({setProps}: {setProps: any}) {
+    const [scroll, setScroll] = useState(false)
+
+    useEffect(() => {
+        const scrollListener = () => {
+            if (window.scrollY > 2){
+                setScroll(true)
+            }
+            else{
+                setScroll(false)
+            }
+        }
+        window.addEventListener('scroll', scrollListener)
+        return () => {
+            window.removeEventListener('scroll', scrollListener)
+        }
+    }, [])
+
     const [isActive, setActive] = useState(false);
     const toggleClass = () => {
         setActive(!isActive)
         setProps(isActive)
     }
     return(
-        <header className="header">
+        <header className={scroll ? "header sticky" : "header"}>
             <a href="/" className="logo">GBF</a>
             <div className="links-wrapper">
                 <a href="/" className="links active">Home</a>
