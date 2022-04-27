@@ -5,20 +5,31 @@ import SignIn from '../../assets/images/sliding-signin.png'
 
 export default function Projects() {
     return(
-        <div className="container-area">
+        <div className="projects-area">
             <h1 className="container-title">Principais projetos</h1>
             <div className="arrow">
                 <i className="fa-solid fa-chevron-down"></i>
             </div>
             <div className="container-projects">
                 <div className="projects" id="one">
-                    <img src={Metabase} alt="image-metabase" className="imgs"/>
-                    <div className="content-project">
-
-                    </div>
+                    <a href="">
+                        <img src={Metabase} alt="image-metabase" className="imgs"/>
+                        <div className="content-project">
+                            <h2 className="description-project"><b>INDICAA</b></h2>
+                            <p className="description-project">Feito exclusivamente para coordenadores e pessoas da gestão da Universidade de Brasília, 
+                                com o intuito de auxiliar a administração das matérias ofertadas, indicando através de gráficos disponíveis no Metabase.
+                            </p>
+                            <p className="description-project">Saiba mais</p>
+                        </div>
+                    </a>
                 </div>
                 <div className="projects" id="two">
-                    <img src={SignIn} alt="image-sign-in" className="imgs"/>
+                    <a href="">
+                        <img src={SignIn} alt="image-sign-in" className="imgs"/>
+                        <div className="content-project">
+
+                        </div>
+                    </a>
                 </div>
                 <div className="projects" id="three">
 
