@@ -12,7 +12,9 @@ html, body{
 
 .light{
     --backgroundColor: #f6f6f6;
+    --backdropColor: rgba(235, 235, 235, 0.8);
     --primary-color: #282828;
+    --primary-color-darker: #363636;
     --elementary-color: #f0f0f0;
     --line-color: #CFCFCF;
     --secondary-color: #EDEDED;
@@ -20,7 +22,9 @@ html, body{
 
 .dark{
     --backgroundColor: #111111;
+    --backdropColor: rgba(20, 20, 20, 0.8);
     --primary-color: #EDEDED;
+    --primary-color-darker: #d6d6d6;
     --elementary-color: #1f1f1f;
     --line-color: #515151;
     --secondary-color: #111111;
