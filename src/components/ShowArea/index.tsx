@@ -22,10 +22,10 @@ export default function ShowArea({props}: {props: any}){
                 </div>
             </div>
             <div className={"img"}>
-                <img src={LightStatic} id="img" className={props ? "img-style static" : "static img-style imgOff"}/> 
-                <img src={LightGif} id="img" className={props ? "img-style" : "img-style imgOff"}/>      
-                <img src={DarkStatic} id="img" className={props ? "img-style static imgOff" : "static img-style"}/>        
-                <img src={DarkGif} id="img" alt="Illustration Dark" className={props ? "img-style imgOff" : "img-style"}/>
+                <img src={LightStatic} id="img" className={props ? "img-style static imgOff" : "static img-style"}/> 
+                <img src={LightGif} id="img" className={props ? "img-style imgOff" : "img-style "}/>      
+                <img src={DarkStatic} id="img" className={props ? "img-style static" : "static img-style imgOff"}/>        
+                <img src={DarkGif} id="img" alt="Illustration Dark" className={props ? "img-style" : "img-style imgOff"}/>
             </div>
         </div>
     )
