@@ -9,9 +9,9 @@ export default function ShowArea({props}: {props: any}){
     return(
         <div className="showArea">
             <div className="showArea-info">
-                <h2>Olá, me chamo</h2>
+                <h2 className="hello">Olá, me chamo</h2>
                 <h1 className="nome">Guilherme Barbosa</h1>
-                <p>Sou estudante de <b><i>Engenharia de Software</i></b> pela <b><i>Universidade de Brasília.</i></b> Esse é o meu portfólio, 
+                <p className="pessoal-description">Sou estudante de <b><i>Engenharia de Software</i></b> pela <b><i>Universidade de Brasília.</i></b> Esse é o meu portfólio, 
                     onde você consegue encontrar alguns de meus projetos como <b><i>Desenvolvedor Web. </i></b> 
                     Se estiver procurando alguém <b><i>competente e focado</i></b>, hoje é seu dia de sorte, pois esse sou eu!
                 </p>

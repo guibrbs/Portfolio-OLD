@@ -24,25 +24,22 @@
     width: 40rem;
 }
 
-h1, h2{
+.hello, .nome{
     letter-spacing: -.15rem;
     width: fit-content;
     height: fit-content;
 }
 
-h2{
+.hello{
     line-height: 60%;
     font-weight: 400;
     font-size: 40px;
 }
 
-h1{
-    font-weight: 600;
-    font-size: 48px;
-}
-
 .nome{
     position: relative;
+    font-weight: 600;
+    font-size: 48px;
 }
 
 .nome::after{
@@ -61,13 +58,13 @@ h1{
     background-size: 100% 100%;
 }
 
-p{
+.pessoal-description{
     font-size: 22px;
     font-weight: 400;
     line-height: 105%;
     word-spacing: 2px;
+    letter-spacing: .2px;
 }
-
 .btn-area{
     display: flex;
     height: 100%;
