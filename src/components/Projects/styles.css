@@ -67,3 +67,22 @@
 .explore:hover.explore::after{
     background-size: 100% 100%;
 }
+
+.imgs{
+    width: 100%;
+    height: 45%;
+}
+
+.content-project{
+    filter: brightness(1);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--elementary-color), var(--elementary-color)) /0% 100% no-repeat;
+    background-position: top;
+    transition: all .5s;
+}
+
+.projects:hover .content-project{
+    opacity: 50%;
+    background-size: 100% 100%;
+}

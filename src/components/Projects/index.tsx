@@ -1,5 +1,7 @@
 import React from "react";
 import './styles.css'
+import Metabase from '../../assets/images/metabase.png'
+import SignIn from '../../assets/images/sliding-signin.png'
 
 export default function Projects() {
     return(
@@ -10,10 +12,13 @@ export default function Projects() {
             </div>
             <div className="container-projects">
                 <div className="projects" id="one">
+                    <img src={Metabase} alt="image-metabase" className="imgs"/>
+                    <div className="content-project">
 
+                    </div>
                 </div>
                 <div className="projects" id="two">
-
+                    <img src={SignIn} alt="image-sign-in" className="imgs"/>
                 </div>
                 <div className="projects" id="three">
 
