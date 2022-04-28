@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import ShowArea from "../components/ShowArea";
 import Projects from "../components/Projects";
+import FormContact from "../components/FormContact";
 import './Home.css'
 
 export default function Home({ mode }: { mode:any }){
@@ -15,6 +16,7 @@ export default function Home({ mode }: { mode:any }){
             <Header setProps={setTheme}/>
             <ShowArea props={theme}/>
             <Projects />
+            <FormContact />
         </>
     )
 }
