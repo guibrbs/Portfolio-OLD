@@ -18,6 +18,7 @@ html, body{
     --elementary-color: #cacaca34;
     --line-color: #CFCFCF;
     --secondary-color: #EDEDED;
+    --default-color: black;
 }
 
 .dark{
@@ -28,4 +29,5 @@ html, body{
     --elementary-color: #1f1f1f;
     --line-color: #515151;
     --secondary-color: #111111;
+    --default-color: white;
 }
