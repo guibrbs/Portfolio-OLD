@@ -96,11 +96,12 @@
     margin: 1rem 0 0 1.2rem;
     font-size: 2.3rem;
     border-radius: .4rem;
-    transition: ease .3s;
+    transition: all .3s ease-in-out;
 }
 
 .social:hover{
     background-color: var(--elementary-color);
+    transform: scale(1.1);
 }
 
 .img{
