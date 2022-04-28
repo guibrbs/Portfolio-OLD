@@ -1,7 +1,7 @@
 import React from "react";
 import './styles.css'
-import AvatarLight from '../../assets/images/Avatar.png'
-import AvatarDark from '../../assets/images/Avatar Dark.png'
+import AvatarLight from '../../assets/images/Avatar-Light.png'
+import AvatarDark from '../../assets/images/Avatar-Dark.png'
 
 export default function ShowArea({props}: {props: any}){
     return(
@@ -15,8 +15,12 @@ export default function ShowArea({props}: {props: any}){
                 </p>
                 <div className="btn-area">
                     <p className="btn">Entre em contato</p>
-                    <a href="https://github.com/guibrbs" target={"_blank"} rel={"noreferrer noopener"} className="social"><i className="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/guibrbs/" className="social" target={"_blank"} rel={"noreferrer noopener"}><i className="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/guibrbs" target={"_blank"} rel={"noreferrer noopener"} className="social" title="GitHub">
+                        <i className="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/guibrbs/" className="social" target={"_blank"} rel={"noreferrer noopener"} title="Linkedin">
+                        <i className="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
             <div className={"img"}>
