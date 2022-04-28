@@ -20,10 +20,9 @@ export default function Header({setProps}: {setProps: any}) {
     }, [])
 
     const [isActive, setActive] = useState(false);
-    const toggleClass = () => {
-        setActive(!isActive)
+    useEffect(() => {
         setProps(isActive)
-    }
+    })
     return(
         <header className={scroll ? "header sticky" : "header"}>
             <a href="/" className="logo">GBF</a>
@@ -32,7 +31,7 @@ export default function Header({setProps}: {setProps: any}) {
                 <a href="/" className="links">Projetos</a>
                 <a href="/" className="links">Sobre</a>
             </div>
-            <div className="icon" onClick={toggleClass}>
+            <div className="icon" onClick={() => setActive(!isActive)}>
                 <i className="fa-solid fa-moon" ></i>
                 <i className="fa-solid fa-sun" ></i>
             </div>

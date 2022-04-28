@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Exo', sans-serif;
+    padding: 0 3rem 0 3rem;
 }
 
 .wrapper{
