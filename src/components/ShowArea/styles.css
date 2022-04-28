@@ -106,7 +106,7 @@
 }
 
 .img{
-    width: 32vw;
+    width: 33vw;
     height: fit-content;
     overflow: hidden;
     display: flex;
@@ -120,8 +120,8 @@
 }
 
 .static{
-    width: 95%;
-    border-radius: 42%;
+    width: 107%;
+    border-radius: 50%;
     transition: ease-in-out 5s linear 1s;
 }
 

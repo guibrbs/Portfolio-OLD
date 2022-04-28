@@ -1,7 +1,7 @@
 import React from "react";
 import './styles.css'
-import AvatarLight from '../../assets/images/Avatar-Light.png'
-import AvatarDark from '../../assets/images/Avatar-Dark.png'
+import AvatarLight from '../../assets/images/Avatar.png'
+import AvatarDark from '../../assets/images/Avatar Dark.png'
 
 export default function ShowArea({props}: {props: any}){
     return(
