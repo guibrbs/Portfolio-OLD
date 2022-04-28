@@ -1,5 +1,18 @@
 .projects-area{
+    position: relative;
     margin: 5rem 0 5rem 0;
+}
+
+.projects-area::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 23rem;
+    height: 1px;
+    background-color: var(--line-color);
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .container-projects{
@@ -51,10 +64,13 @@
     position: relative;
     margin: 2rem auto 0;
     font-size: x-large;
-    color: var(--primary-color);
     letter-spacing: normal;
     font-weight: 500;
     transition: all .5s;
+}
+
+.explore a{
+    color: var(--primary-color);
 }
 
 .explore::after{

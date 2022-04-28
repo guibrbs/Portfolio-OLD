@@ -42,7 +42,7 @@ export default function Projects() {
 
                 </div>
             </div>
-            <a href="/"><h2 className="explore">Explore mais projetos</h2></a>
+            <h2 className="explore"><a href="/">Explore mais projetos</a></h2>
         </div>
     )
 }
