@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 7rem;
+    margin-top: 7rem;
 }
 
 .contact-content{
@@ -38,24 +39,30 @@
     fill: var(--secondary-color);
 }
 
+.contact-wrapper{
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .title-contact{
-    width: 100%;
-    max-width: 50rem;
-    font-size: 3.4rem;
-    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
     text-align: center;
     color: var(--secondary-color);
-    margin: auto auto 3rem auto;
-    font-weight: 600;
+    font-weight: 500;
+    margin-bottom: 2rem;
 }
 
 .form{
-    margin: 0 auto auto auto;
     width: 100%;
     max-width: 43rem;
     height: 4rem;
     background-color: var(--default-color);
-
     border-radius: 5rem;
     display: flex;
     align-items: center;
@@ -77,7 +84,7 @@ input{
 
 input::placeholder{
     color: var(--secondary-color);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 input:focus{
@@ -91,5 +98,10 @@ input:focus{
     z-index: 2;
     color: var(--primary-color);
     width: 9rem;
-    padding-right: 1.5rem;
+    padding-right: 1.7rem;
+    transition: filter .5s;
+}
+
+.submit:hover{
+    filter: brightness(1.3);
 }
