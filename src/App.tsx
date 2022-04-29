@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
-import Projects from './pages/Projects'
+import Projects_Page from './pages/Projects_Page'
 import { DarkModeContext } from './DarkModeContext'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <div className="wrapper">
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path='Projetos' element={<Projects />}/>
+          <Route path='Projetos' element={<Projects_Page />}/>
         </Routes>
       </div>
     </div>
