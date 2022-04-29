@@ -50,6 +50,7 @@ a{
     background-color: var(--primary-color);
     cursor: default;
     transition: filter .3s;
+    pointer-events: none;
 }
 
 .links.active:hover{
