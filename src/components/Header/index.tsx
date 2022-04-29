@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { DarkModeContext } from "../../DarkModeContext";
 import './styles.css'
 
-export default function Header({setProps}: {setProps: any}) {
+export default function Header() {
     const [scroll, setScroll] = useState(false)
 
     useEffect(() => {
@@ -19,19 +20,16 @@ export default function Header({setProps}: {setProps: any}) {
         }
     }, [])
 
-    const [isActive, setActive] = useState(false);
-    useEffect(() => {
-        setProps(isActive)
-    })
+    const {isActive, setActiveState} = useContext(DarkModeContext)
     return(
         <header className={scroll ? "header sticky" : "header"}>
             <a href="/" className="logo">GBF</a>
             <div className="links-wrapper">
                 <a href="/" className="links active">Home</a>
-                <a href="/" className="links">Projetos</a>
+                <a href="projetos" className="links">Projetos</a>
                 <a href="/" className="links">Sobre</a>
             </div>
-            <div className="icon" onClick={() => setActive(!isActive)}>
+            <div className="icon" onClick={() => setActiveState(!isActive)}>
                 <i className="fa-solid fa-moon" ></i>
                 <i className="fa-solid fa-sun" ></i>
             </div>

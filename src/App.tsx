@@ -1,13 +1,20 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
+import Projects from './pages/Projects'
+import { DarkModeContext } from './DarkModeContext'
 
 function App() {
-  const [theme, setTheme] = useState(0)
+  const {isActive} = useContext(DarkModeContext)
+
   return (
-    <div className={theme ? "container dark" : "container light"}>
+    <div className={isActive ? "container dark" : "container light"}>
       <div className="wrapper">
-        <Home mode={setTheme}/>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='Projetos' element={<Projects />}/>
+        </Routes>
       </div>
     </div>
   )

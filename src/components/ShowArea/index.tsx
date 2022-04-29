@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import './styles.css'
 import AvatarLight from '../../assets/images/Avatar.png'
 import AvatarDark from '../../assets/images/Avatar Dark.png'
+import { DarkModeContext } from "../../DarkModeContext";
 
-export default function ShowArea({props}: {props: any}){
+export default function ShowArea(){
+    const {isActive} = useContext(DarkModeContext)
     return(
         <div className="showArea">
             <div className="showArea-info">
@@ -24,8 +26,8 @@ export default function ShowArea({props}: {props: any}){
                 </div>
             </div>
             <div className={"img"}>
-                <img src={AvatarLight} id="img" className={props ? "img-style static imgOff" : "static img-style"}/> 
-                <img src={AvatarDark} id="img" className={props ? "img-style static" : "static img-style imgOff"}/>        
+                <img src={AvatarLight} id="img" className={isActive ? "img-style static imgOff" : "static img-style"}/> 
+                <img src={AvatarDark} id="img" className={isActive ? "img-style static" : "static img-style imgOff"}/>        
             </div>
         </div>
     )
