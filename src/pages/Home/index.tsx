@@ -12,7 +12,9 @@ export default function Home(){
         <>
             <Header />
             <ShowArea />
-            <Projects />
+            <div className="Home-area">
+                <Projects />
+            </div>
             <FormContact />
             <Footer />
         </>
