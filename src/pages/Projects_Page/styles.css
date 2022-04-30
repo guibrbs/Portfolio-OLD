@@ -17,10 +17,10 @@
 
 .container-ip {
   margin: auto;
-  margin-top: 7rem;
+  margin-top: 8rem;
   margin-bottom: 7rem;
   width: 100%;
-  max-width: 40rem;
+  max-width: 33rem;
   height: 100%;
   max-height: 51rem;
   display: flex;
@@ -29,16 +29,22 @@
 
 .bigger {
   position: relative;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: var(--primary-color);
   text-decoration: none;
+  filter: brightness(0.95);
+  transition: filter .3s;
+}
+
+.bigger:hover{
+  filter: brightness(1.1);
 }
 
 .bigger::after{
   content: '';
   display: block;
   position: absolute;
-  top: 85%;
+  top: 90%;
   transform: translateY(-50%);
   width: 100%;
   height: 3px;
@@ -51,20 +57,23 @@
 }
 
 .arrow-left {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: var(--primary-color);
   z-index: 0;
-  transition: transform 0.4s;
+  filter: brightness(0.95);
+  transition: all 0.4s;
 }
 
 .arrow-left:hover {
   transform: translateX(-8px);
+  filter: brightness(1.1);
 }
 
 .content-ip {
   font-size: 1.1rem;
   line-height: 1.5rem;
   color: var(--primary-color);
+  text-align: justify;
 }
 
 .subtitle-ip {
@@ -73,7 +82,7 @@
 }
 
 .tech{
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -109,7 +118,7 @@
   font-family: 'Exo', sans-serif;
   content: attr(title);
   position: absolute;
-  top: 125%;
+  top: 135%;
   transform: translateY(-50%);
   font-size: .8rem;
   background-color: var(--elementary-color);
@@ -119,9 +128,9 @@
 }
 
 .imgs-ip{
-  margin-top: 2.5rem;
+  margin: 2.5rem auto 0 auto;
   width: 100%;
-  height: 100%;
+  height: 47%;
   border-radius: 1rem;
   overflow: hidden;
 }
