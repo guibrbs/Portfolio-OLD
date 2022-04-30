@@ -1,7 +1,50 @@
-.projects-page .projects-area{
-    margin: 10rem 0 10rem 0;
+.projects-page .projects-area {
+  margin: 10rem 0 10rem 0;
 }
 
-.projects-page .explore{
-    display: none;
+.projects-page .explore {
+  display: none;
+}
+
+.title-wrapper {
+  display: grid;
+  grid-template-columns: 0 1fr;
+}
+
+.container-ip {
+  margin: auto;
+  margin-top: 10rem;
+  width: 100%;
+  max-width: 40rem;
+  height: 100%;
+  max-height: 45rem;
+  border: 1px solid var(--line-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.bigger {
+  font-size: 4rem;
+}
+
+.arrow-left {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  z-index: 0;
+  transition: transform 0.4s;
+}
+
+.arrow-left:hover {
+  transform: translateX(-8px);
+}
+
+.content-ip {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: var(--primary-color);
+}
+
+.subtitle-ip {
+  padding: 1rem 0 1rem 0;
+  color: var(--primary-color);
 }
