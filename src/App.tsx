@@ -14,8 +14,13 @@ function App() {
       <div className="wrapper">
         <Routes>
           <Route path='/' element={<Home />}/>
-          <Route path='Projetos' element={<Projects_Page />}/>
-          <Route path='individual' element={<IndividualProjects />}/>
+          <Route path='/projetos' element={<Projects_Page />}/>
+          <Route path='/projetos/INDICAA' element={<IndividualProjects />}/>
+          <Route path="/projetos/SignIn" element={<IndividualProjects />}/>
+          <Route path='/projetos/Landing-Page' element={<IndividualProjects />}/>
+          <Route path='/projetos/Clone-Netflix' element={<IndividualProjects />}/>
+          <Route path='/projetos/Interactive-Rating' element={<IndividualProjects />}/>
+          <Route path='/projetos/Covid-Tracker' element={<IndividualProjects />}/>
         </Routes>
       </div>
     </div>
