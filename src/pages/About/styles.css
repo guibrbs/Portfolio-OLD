@@ -1,0 +1,27 @@
+.about-container{
+    margin: 8rem auto 7rem auto;
+    width: 100%;
+    max-width: 38rem;
+    height: 45rem;
+    border: 1px solid var(--line-color);
+}
+
+.imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: var(--gradient-color);
+    border-radius: 50%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.imgBx .photo{
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+}
