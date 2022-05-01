@@ -39,7 +39,7 @@ export default function Header() {
         >
           Projetos
         </a>
-        <a href="/" className={href === "/sobre" ? "links active" : "links"}>
+        <a href="/sobre" className={href === "/sobre" ? "links active" : "links"}>
           Sobre
         </a>
       </div>
