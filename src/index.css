@@ -19,7 +19,7 @@ html, body{
     --line-color: #CFCFCF;
     --secondary-color: #EDEDED;
     --default-color: black;
-    --gradient-color: linear-gradient(rgb(255, 186, 57), rgba(235, 155, 5, 0.822));
+    --gradient-color: linear-gradient(rgb(190, 220, 215), rgb(190, 220, 215));
 }
 
 .dark{
@@ -31,5 +31,5 @@ html, body{
     --line-color: #515151;
     --secondary-color: #111111;
     --default-color: white;
-    --gradient-color: linear-gradient(rgb(190, 220, 215), rgb(190, 220, 215));
+    --gradient-color: linear-gradient(rgb(255, 186, 57), rgba(235, 155, 5, 0.822));
 }
