@@ -11,7 +11,7 @@
     width: 200px;
     height: 200px;
     background: var(--gradient-color);
-    border-radius: 50%;
+    border-radius: 1rem;
     z-index: 0;
     overflow: hidden;
 }
@@ -21,7 +21,39 @@
     top: 50%;
     left: 51%;
     transform: translate(-50%, -50%);
-    width: 95%;
-    height: 100%;
+    width: 105%;
+    height: 105%;
     object-fit: cover;
+}
+
+.about-grid{
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+}
+
+.about-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-wrapper h2{
+    margin-top: .5rem;
+    width: fit-content;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.about-wrapper .fa-brands{
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    color: var(--primary-color);
+    transition: transform .3s;
+}
+
+.about-wrapper .fa-brands:hover{
+    transform: scale(1.2);
 }

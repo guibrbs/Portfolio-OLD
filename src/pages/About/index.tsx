@@ -8,10 +8,18 @@ export default function About() {
     <>
       <Header />
       <div className="about-container">
-        <div className="imgBx">
-            <img src={Photo} alt="" className="photo" />
+        <div className="about-grid">
+          <div className="about-wrapper">
+            <div className="imgBx">
+                <img src={Photo} alt="" className="photo" />
+            </div>
+            <h2>Guilherme Barbosa</h2>
+            <div>
+            <a href="https://github.com/guibrbs" target={"_blank"} rel={"noreferrer noopener"}><i className="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/guibrbs/" target={"_blank"} rel={"noreferrer noopener"}><i className="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
         </div>
-        <p>Guilherme Barbosa</p>
       </div>
     </>
   );
