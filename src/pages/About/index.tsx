@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../../components/Header";
 import "./styles.css";
 import Photo from "../../assets/images/photo.png";
+import Footer from "../../components/Footer";
+import Curriculum from '../../assets/images/CV-GuilhermeBarbosaFerreira.pdf'
 
 export default function About() {
   return (
@@ -17,19 +19,22 @@ export default function About() {
             <div>
               <a href="https://github.com/guibrbs" target={"_blank"} rel={"noreferrer noopener"}><i className="fa-brands fa-github"></i></a>
               <a href="https://www.linkedin.com/in/guibrbs/" target={"_blank"} rel={"noreferrer noopener"}><i className="fa-brands fa-linkedin"></i></a>
-              <a href=""><i className="fa-solid fa-envelope"></i></a>
-              <a href=""><i className="fa-solid fa-file-arrow-down"></i></a>
+              <a href={"mailto: mrguilhermeferreira@gmail.com"} target={"_blank"} rel={"noreferrer noopener"}><i className="fa-solid fa-envelope"></i></a>
+              <a href={Curriculum} target={"_blank"} rel={"noreferrer noopener"}><i className="fa-solid fa-file-arrow-down" ></i></a>
             </div>
+            <p style={{textAlign: 'justify', marginTop: '1rem', fontSize: '0.9rem'}}>"Gamification can play an important role in implementing change by defining a clear transformation path with simple steps and encouragement along the way 
+              ... [using] goal setting, triggers, and baby steps to help people change behaviors. 
+              It helps people repeat behaviors until they become habits, keep the process fresh, and develop change over time." - Brian Burke</p>
           </div>
           <div>
             <div id="about-title">
               <h1>Eae.</h1>
-              <a href="" id="arrow-left"><i className="fa-solid fa-arrow-left-long"></i></a>
+              <a href="/" id="arrow-left"><i className="fa-solid fa-arrow-left-long"></i></a>
             </div>
             <p id="description">
-              eu sou o Guilherme, sou técnico em informática e atualmente estou fazendo graduação em Engenharia de Software pela Universidade de Brasília.
-              vitae ipsum in Quisque tempor elit turpis elit. hendrerit ex. nibh Lorem volutpat ac Lorem commodo vitae orci gravida leo. amet, eget adipiscing diam 
-              eu odio lorem volutpat ac Lorem commodo vitae orci gravida leo. amet eget eu odio lorem.
+              eu sou o Guilherme, sou <b>técnico em informática</b> e atualmente estou fazendo graduação em <b>Engenharia de Software</b> pela Universidade de Brasília.
+              Pretendo seguir a área de desenvolvimento <b>Web e Mobile</b> com a ambição de participar das equipes de desenvolvimento de <b>grandes empresas</b>, me tornando
+              uma referência para os profissionais da área. Atualmente sou trainee na <b>Orc'estra Gamificação.</b>
             </p>
             <h1 style={{marginTop: '1rem'}}>Tecnologias</h1>
             <div style={{display: 'flex', width: '100%', flexWrap: 'wrap'}}>
@@ -51,6 +56,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

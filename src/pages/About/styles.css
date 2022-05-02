@@ -1,7 +1,7 @@
 .about-container {
-  margin: 8rem auto 7rem auto;
+  margin: 8rem auto 9rem auto;
   width: 100%;
-  max-width: 41rem;
+  max-width: 42rem;
   height: max-content;
 }
 
@@ -29,7 +29,7 @@
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   grid-auto-columns: minmax(200px, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   color: var(--primary-color);
 }
 
