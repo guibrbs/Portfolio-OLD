@@ -87,7 +87,7 @@
   flex-wrap: wrap;
 }
 
-.colored{
+.tech .colored{
   position: relative;
   display: flex;
   justify-content: center;
@@ -100,21 +100,21 @@
   transition: filter .3s;
 }
 
-.colored:hover{
+.tech .colored:hover{
   filter: grayscale(0);
 }
 
-.colored:last-child{
+.tech .colored:last-child{
   color: var(--primary-color);
   transition: all .3s;
 }
 
-.colored:last-child:hover{
+.tech .colored:last-child:hover{
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
-.colored[title]:hover::after{
+.colored[title]:hover::after, .devicon-nextjs-original[title]:hover::after{
   font-family: 'Exo', sans-serif;
   content: attr(title);
   position: absolute;
