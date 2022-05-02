@@ -1,11 +1,12 @@
 
 .showArea{
     position: relative;
-    height: 93vh;
+    height: 88vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+    margin-top: 5rem;
 }
 
 .showArea::after{
@@ -21,7 +22,7 @@
 
 .showArea-info{
     color: var(--primary-color);
-    width: 40rem;
+    width: 46rem;
 }
 
 .hello, .nome{
@@ -33,13 +34,13 @@
 .hello{
     line-height: 60%;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 .nome{
     position: relative;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 3.5rem;
 }
 
 .nome::after{
@@ -59,7 +60,7 @@
 }
 
 .pessoal-description{
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 105%;
     word-spacing: 2px;
@@ -95,7 +96,7 @@
     color: var(--primary-color);
     width: 3.2rem;
     margin: 1rem 0 0 1.2rem;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     border-radius: .4rem;
     transition: all .3s ease-in-out;
 }
@@ -106,13 +107,12 @@
 }
 
 .img{
-    width: 40rem;
+    width: 23rem;
     height: fit-content;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 14rem;
 }
 
 .imgOff{
@@ -120,7 +120,7 @@
 }
 
 .static{
-    width: 140%;
+    width: 100%;
     transition: ease-in-out 5s linear 1s;
 }
 
