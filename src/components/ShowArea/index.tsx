@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import './styles.css'
-import AvatarLight from '../../assets/images/Avatar.png'
-import AvatarDark from '../../assets/images/Avatar Dark.png'
+import AvatarLight from '../../assets/images/AvatarDark.png'
+import AvatarDark from '../../assets/images/AvatarLight.png'
 import { DarkModeContext } from "../../DarkModeContext";
 
 export default function ShowArea(){
