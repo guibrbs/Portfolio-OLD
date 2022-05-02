@@ -1,59 +1,103 @@
-.about-container{
-    margin: 8rem auto 7rem auto;
-    width: 100%;
-    max-width: 38rem;
-    height: 45rem;
-    border: 1px solid var(--line-color);
+.about-container {
+  margin: 8rem auto 7rem auto;
+  width: 100%;
+  max-width: 41rem;
+  height: max-content;
 }
 
-.imgBx{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background: var(--gradient-color);
-    border-radius: 1rem;
-    z-index: 0;
-    overflow: hidden;
+.imgBx {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  max-height: 200px;
+  background: var(--gradient-color);
+  border-radius: 1rem;
+  z-index: 0;
+  overflow: hidden;
 }
 
-.imgBx .photo{
-    position: absolute;
-    top: 50%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    width: 105%;
-    height: 105%;
-    object-fit: cover;
+.imgBx .photo {
+  width: 105%;
+  height: 105%;
+  object-fit: cover;
 }
 
-.about-grid{
-    width: 100%;
-    height: 40%;
-    display: grid;
-    grid-template-columns: .5fr 1fr;
+.about-grid {
+  width: 100%;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-auto-columns: minmax(200px, 1fr);
+  grid-gap: 1rem;
+  color: var(--primary-color);
 }
 
-.about-wrapper{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.about-wrapper h2{
-    margin-top: .5rem;
-    width: fit-content;
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--primary-color);
+.about-wrapper h2 {
+  width: fit-content;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
-.about-wrapper .fa-brands{
-    font-size: 1.5rem;
-    margin-right: .5rem;
-    color: var(--primary-color);
-    transition: transform .3s;
+.about-wrapper a {
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+  color: var(--primary-color);
+  transition: transform 0.3s;
 }
 
-.about-wrapper .fa-brands:hover{
-    transform: scale(1.2);
+.about-wrapper a :hover {
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+#about-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 2rem;
+  justify-content: space-between;
+}
+
+#arrow-left {
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: var(--primary-color);
+}
+
+#description {
+  width: 100%;
+  font-size: 1.1rem;
+  word-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
+  text-align: justify;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+#tech {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid var(--line-color);
+  font-size: 2.5rem;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+#tech-title {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
