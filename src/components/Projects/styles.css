@@ -1,6 +1,8 @@
 .projects-area{
     position: relative;
     margin: 5rem 0 5rem 0;
+    width: 100%;
+    height: max-content;
 }
 
 .projects-area::after{
@@ -49,7 +51,8 @@
 
 
 .projects{
-    width: 23rem;
+    width: 100%;
+    max-width: 23rem;
     height: 38rem;
     border: 1px solid var(--line-color);
     border-radius: 25px;
