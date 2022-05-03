@@ -1,7 +1,23 @@
 import React from "react";
 import './styles.css'
+import emailjs from '@emailjs/browser';
 
 export default function FormContact(){
+    function sendEmail(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm("service_810kcmm", "template_6998imi", e.currentTarget, "uA0o6y8D4ZXWRR-U3")
+          .then(
+            (result) => {
+              console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+          e.currentTarget.reset()
+      }
     return(
         <div className="contact-container">
             <h1 className="container-title">ENTRE EM CONTATO</h1>
@@ -12,8 +28,8 @@ export default function FormContact(){
                 </svg>
                 <div className="contact-wrapper">
                     <h1 className="title-contact">Quer trabalhar junto e criar produtos incríveis comigo?</h1>
-                    <form action="" className="form">
-                        <input type="email" name="" id="" placeholder="Escreva seu email aqui"/>
+                    <form onSubmit={sendEmail} className="form">
+                        <input type="email" name="email" id="email" placeholder="Escreva seu email aqui"/>
                         <input type="submit" value="Enviar" className="submit"/>
                     </form>
                 </div>
