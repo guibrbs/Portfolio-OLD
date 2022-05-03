@@ -127,12 +127,14 @@ h2.description-project{
 }
 
 p.description-project{
+    color: var(--primary-color-darker);
     padding-top: .5rem;
     font-size: 1.2rem;
     font-weight: 400;
 }
 
 p.description-project:last-child{
+    color: var(--primary-color);
     padding-top: 1rem;
     font-weight: 700;
     font-size: 1.4rem;
