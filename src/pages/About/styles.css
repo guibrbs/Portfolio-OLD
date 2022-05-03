@@ -81,6 +81,11 @@
   text-align: justify;
   flex-wrap: wrap;
   margin-top: 0.5rem;
+  color: var(--primary-color-darker);
+}
+
+#description b{
+  color: var(--primary-color);
 }
 
 #tech {

@@ -22,7 +22,8 @@ export default function About() {
               <a href={"mailto: mrguilhermeferreira@gmail.com"} target={"_blank"} rel={"noreferrer noopener"}><i className="fa-solid fa-envelope"></i></a>
               <a href={Curriculum} target={"_blank"} rel={"noreferrer noopener"}><i className="fa-solid fa-file-arrow-down" ></i></a>
             </div>
-            <p style={{textAlign: 'justify', marginTop: '1rem', fontSize: '0.9rem'}}>"Gamification can play an important role in implementing change by defining a clear transformation path with simple steps and encouragement along the way 
+            <p style={{textAlign: 'justify', marginTop: '1rem', fontSize: '0.9rem', color: 'var(--primary-color-darker)'}}>
+              "Gamification can play an important role in implementing change by defining a clear transformation path with simple steps and encouragement along the way 
               ... [using] goal setting, triggers, and baby steps to help people change behaviors. 
               It helps people repeat behaviors until they become habits, keep the process fresh, and develop change over time." - Brian Burke</p>
           </div>
