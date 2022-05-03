@@ -65,6 +65,11 @@
     line-height: 105%;
     word-spacing: 2px;
     letter-spacing: .2px;
+    color: var(--primary-color-darker);
+}
+
+.pessoal-description b{
+    color: var(--primary-color);
 }
 .btn-area{
     display: flex;
@@ -107,7 +112,8 @@
 }
 
 .img{
-    width: 23rem;
+    width: 100%;
+    max-width: 23rem;
     height: fit-content;
     overflow: hidden;
     display: flex;
