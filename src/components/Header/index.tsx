@@ -4,6 +4,7 @@ import "./styles.css";
 
 export default function Header() {
   const [scroll, setScroll] = useState(false);
+  const [hamburguer, setHamburguer] = useState(false)
 
   useEffect(() => {
     const scrollListener = () => {
@@ -25,27 +26,33 @@ export default function Header() {
   });
   const { isActive, setActiveState } = useContext(DarkModeContext);
   return (
-    <header className={scroll ? "header sticky" : "header"}>
-      <a href="/" className="logo">
-        GBF
-      </a>
-      <div className="links-wrapper">
-        <a href="/" className={href === "/" ? "links active" : "links"}>
-          Home
+    <header>
+      <div className={scroll ? "header sticky" : "header" }>
+        <a href="/" className="logo">
+          GBF
         </a>
-        <a
-          href="/projetos"
-          className={href === "/projetos" ? "links active" : "links"}
-        >
-          Projetos
-        </a>
-        <a href="/sobre" className={href === "/sobre" ? "links active" : "links"}>
-          Sobre
-        </a>
-      </div>
-      <div className="icon" onClick={() => setActiveState(!isActive)}>
-        <i className="fa-solid fa-moon"></i>
-        <i className="fa-solid fa-sun"></i>
+        <div className={hamburguer ? "links-wrapper active" : "links-wrapper"}>
+          <a href="/" className={href === "/" ? "links active" : "links"}>
+            Home
+          </a>
+          <a
+            href="/projetos"
+            className={href === "/projetos" ? "links active" : "links"}
+          >
+            Projetos
+          </a>
+          <a href="/sobre" className={href === "/sobre" ? "links active" : "links"}>
+            Sobre
+          </a>
+        </div>
+        <div className="icon" onClick={() => setActiveState(!isActive)}>
+          <i className="fa-solid fa-moon"></i>
+          <i className="fa-solid fa-sun"></i>
+        </div>
+        <div className={hamburguer ? 'hamburguer-menu active' : 'hamburguer-menu'} onClick={(e) => setHamburguer(!hamburguer)}>
+          <div className="bar">
+          </div>
+        </div>
       </div>
     </header>
   );
