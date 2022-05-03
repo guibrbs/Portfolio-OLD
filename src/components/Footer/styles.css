@@ -4,6 +4,7 @@
     height: 8rem;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     color: var(--primary-color);
 }
 
@@ -24,5 +25,18 @@
 
 .footer-container p{
     line-height: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.contact-div{
+    display: flex;
+    width: fit-content;
+    height: 1.5rem;
+    align-items: center;
+}
+
+.wpp{
+    margin-left: .5rem;
+    font-size: 1.1rem;
+    color: var(--primary-color);
 }
