@@ -29,7 +29,7 @@ export default function FormContact(){
                 <div className="contact-wrapper">
                     <h1 className="title-contact">Quer trabalhar junto e criar produtos incríveis comigo?</h1>
                     <form onSubmit={sendEmail} className="form">
-                        <input type="email" name="email" id="email" placeholder="Escreva seu email aqui"/>
+                        <input type="email" name="email" id="email" placeholder="Escreva seu email aqui" className="email"/>
                         <input type="submit" value="Enviar" className="submit"/>
                     </form>
                 </div>
