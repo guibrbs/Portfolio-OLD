@@ -4,6 +4,7 @@ import AvatarLight from '../../assets/images/AvatarLight.png'
 import AvatarDark from '../../assets/images/AvatarDark.png'
 import { DarkModeContext } from "../../DarkModeContext";
 import { motion } from "framer-motion";
+import { ContactContext } from "../../ContactContext";
 
 export default function ShowArea(){
     const {isActive} = useContext(DarkModeContext)
@@ -25,6 +26,13 @@ export default function ShowArea(){
           }
         }
     }
+    const {toContact, setToContactState } = useContext(ContactContext)
+    const onClickConst = () => {
+        setToContactState(true)
+        setTimeout(() => {
+            setToContactState(false)
+        }, 1000)
+    }
     return(
         <div className="showArea">
             <div className="showArea-info">
@@ -37,7 +45,7 @@ export default function ShowArea(){
                         Se estiver procurando alguém <b><i>competente e focado</i></b>, hoje é seu dia de sorte, pois esse sou eu!
                     </motion.p>
                     <motion.div variants={item} className="btn-area">
-                        <p className="btn">Entre em contato</p>
+                        <p className="btn" onClick={onClickConst}>Entre em contato</p>
                         <a href="https://github.com/guibrbs" target={"_blank"} rel={"noreferrer noopener"} className="social" title="GitHub">
                             <i className="fa-brands fa-github"></i>
                         </a>

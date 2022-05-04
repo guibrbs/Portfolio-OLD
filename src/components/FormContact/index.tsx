@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import "./styles.css";
 import emailjs from "@emailjs/browser";
+import { ContactContext } from "../../ContactContext";
 
 export default function FormContact() {
+  const myRef = useRef<HTMLDivElement>(null);
+  const {toContact} = useContext(ContactContext)
+  useEffect(() =>{
+    if(toContact){
+      myRef.current?.scrollIntoView()
+    }
+  }, [toContact])
+  
   function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
@@ -24,7 +33,7 @@ export default function FormContact() {
     e.currentTarget.reset();
   }
   return (
-    <div className="contact-container">
+    <div className="contact-container" ref={myRef}>
       <h1 className="container-title">ENTRE EM CONTATO</h1>
       <div className="contact-content">
         <svg
