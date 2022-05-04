@@ -4,7 +4,7 @@
     height: 8rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: var(--primary-color);
 }
 
@@ -39,4 +39,23 @@
     margin-left: .5rem;
     font-size: 1.1rem;
     color: var(--primary-color);
+}
+
+@media (max-width: 620px){
+    .footer-container h1, .footer-container p, .footer-container h3, .wpp{
+        font-size: .7rem;
+        line-height: .8rem;
+    }
+    .contact-div{
+        height: fit-content;
+    }
+    #footer-description{
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer-container h1, .footer-container p, .footer-container h3, .wpp{
+        font-size: .7rem;
+    }
 }
