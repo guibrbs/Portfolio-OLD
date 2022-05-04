@@ -134,3 +134,18 @@
   border-radius: 1rem;
   overflow: hidden;
 }
+
+@media (max-width: 600px){
+  .bigger, .arrow-left{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px){
+  .bigger, .arrow-left{
+    font-size: 1.6rem;
+  }
+  .content-ip{
+    font-size: .9rem;
+  }
+}
