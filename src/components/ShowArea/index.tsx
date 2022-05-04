@@ -33,7 +33,7 @@ export default function ShowArea(){
                     <motion.h1 variants={item} className="nome">Guilherme Barbosa</motion.h1>
                     <motion.p variants={item} className="pessoal-description">
                         Sou estudante de <b><i>Engenharia de Software</i></b> pela <b><i>Universidade de Brasília.</i></b> Esse é o meu portfólio, 
-                        onde você consegue encontrar alguns de meus projetos como <b><i>Desenvolvedor Web. </i></b> 
+                        onde você consegue encontrar alguns de meus projetos como <b><i>Desenvolvedor Front-end. </i></b> 
                         Se estiver procurando alguém <b><i>competente e focado</i></b>, hoje é seu dia de sorte, pois esse sou eu!
                     </motion.p>
                     <motion.div variants={item} className="btn-area">

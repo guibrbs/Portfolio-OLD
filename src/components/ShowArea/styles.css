@@ -141,3 +141,48 @@
     border-radius: .2rem;
     font-weight: 700;
 }
+
+@media (max-width: 950px){
+    .showArea{
+        justify-content: center;
+    }
+    .img{
+        display: none;
+    }
+    .nome{
+        line-height: 3.5rem;
+        padding: .5rem 0 .5rem 0;
+    }
+    .nome::after{
+        display: none;
+    }
+}
+
+@media (max-width: 414px){
+    .hello{
+        font-size: 2.5rem;
+    }
+    .nome{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .pessoal-description{
+        font-size: 1.3rem;
+        line-height: normal;
+    }
+    .btn{
+        font-size: .8rem;
+        padding: .8rem .9rem;
+    }
+    .social{
+        font-size: 1.8rem;
+        width: fit-content;
+    }
+    .social:hover{
+        background-color: var(--backgroundColor);
+        transform: scale(1);
+    }
+    .social[title]:hover::after{
+        display: none;
+    }
+}
