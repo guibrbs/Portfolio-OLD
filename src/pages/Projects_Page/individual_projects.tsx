@@ -120,22 +120,22 @@ export default function IndividualProjects() {
   const [url, setUrl] = useState('')
   useEffect(()=>{
     const href = window.location.pathname
-    if (href === '/projetos/INDICAA'){
+    if (href === '/Portfolio/projetos/INDICAA'){
       setUrl('1')
     }
-    else if (href === '/projetos/SignIn'){
+    else if (href === '/Portfolio/projetos/SignIn'){
       setUrl('2')
     }
-    else if (href === '/projetos/Landing-Page'){
+    else if (href === '/Portfolio/projetos/Landing-Page'){
       setUrl('3')
     }
-    else if (href === '/projetos/Clone-Netflix'){
+    else if (href === '/Portfolio/projetos/Clone-Netflix'){
       setUrl('4')
     }
-    else if (href === '/projetos/Interactive-Rating'){
+    else if (href === '/Portfolio/projetos/Interactive-Rating'){
       setUrl('5')
     }
-    else if (href === '/projetos/Covid-Tracker'){
+    else if (href === '/Portfolio/projetos/Covid-Tracker'){
       setUrl('6')
     }
   }, [])
@@ -149,7 +149,7 @@ export default function IndividualProjects() {
             <div className="container-ip" key={project.id}>
               <>
                 <div className="title-wrapper">
-                  <a href="/projetos" className="arrow-left">
+                  <a href="/Portfolio/projetos" className="arrow-left">
                     <i className="fa-solid fa-arrow-left-long"></i>
                   </a>
                   <h1 className="container-title"><a href={project.link} target={"_blank"} rel={"noreferrer noopener"} className="bigger">{project.title}</a></h1>
