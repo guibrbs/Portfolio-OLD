@@ -120,6 +120,9 @@
 
 @media (max-width: 360px) {
     .submit, .email{
-        font-size: .8rem;
+        font-size: .65rem;
+    }
+    .form{
+        height: 2.3rem;
     }
 }
