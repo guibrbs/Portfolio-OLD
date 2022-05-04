@@ -32,16 +32,16 @@ export default function Header() {
           GBF
         </a>
         <div className={hamburguer ? "links-wrapper active" : "links-wrapper"}>
-          <a href="/" className={href === "/" ? "links active" : "links"}>
+          <a href="/" className={href === "/Portfolio/" ? "links active" : "links"}>
             Home
           </a>
           <a
-            href="/projetos"
-            className={href === "/projetos" ? "links active" : "links"}
+            href="/Portfolio/projetos"
+            className={href === "/Portfolio/projetos" ? "links active" : "links"}
           >
             Projetos
           </a>
-          <a href="/sobre" className={href === "/sobre" ? "links active" : "links"}>
+          <a href="/Portfolio/sobre" className={href === "/Portfolio/sobre" ? "links active" : "links"}>
             Sobre
           </a>
         </div>
