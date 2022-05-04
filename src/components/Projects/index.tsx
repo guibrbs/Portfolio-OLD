@@ -11,7 +11,7 @@ export default function Projects() {
   type Projects_map = object[];
   const projects_map: Projects_map = [
     {
-      link: "/projetos/INDICAA",
+      link: "/Portfolio/projetos/INDICAA",
       img: Metabase,
       alt: "image-metabase",
       title: "INDICAA",
@@ -21,7 +21,7 @@ export default function Projects() {
       id: "one",
     },
     {
-      link: "/projetos/SignIn",
+      link: "/Portfolio/projetos/SignIn",
       img: SignIn,
       alt: "image-sign-in",
       title: "Sign in | Sign up",
@@ -31,7 +31,7 @@ export default function Projects() {
       id: "two",
     },
     {
-        link: "/projetos/Landing-Page",
+        link: "/Portfolio/projetos/Landing-Page",
         img: LandingPage,
         alt: "Landing Page",
         title: "Landing Page",
@@ -41,7 +41,7 @@ export default function Projects() {
         id: "three",
     },
     {
-      link: "/projetos/Clone-Netflix",
+      link: "/Portfolio/projetos/Clone-Netflix",
       img: CloneNetflix,
       alt: "Clone Netflix",
       title: "Clone Netflix",
@@ -51,7 +51,7 @@ export default function Projects() {
       id: "four",
     },
     {
-      link: "/projetos/Interactive-Rating",
+      link: "/Portfolio/projetos/Interactive-Rating",
       img: InteractiveRating,
       alt: "Interactive Rating Component",
       title: "Interactive Rating Component",
@@ -60,7 +60,7 @@ export default function Projects() {
       id: "five",
     },
     {
-      link: "/projetos/Covid-Tracker",
+      link: "/Portfolio/projetos/Covid-Tracker",
       img: CovidTracker,
       alt: "Covid Tracker",
       title: "Covid Tracker",
@@ -95,7 +95,7 @@ export default function Projects() {
         })}
       </div>
       <h2 className="explore">
-        <a href="/projetos">Explore mais projetos</a>
+        <a href="/Portfolio/projetos">Explore mais projetos</a>
       </h2>
     </div>
   );
