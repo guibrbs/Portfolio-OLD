@@ -1,50 +1,26 @@
 {
-  "homepage": "https://guibrbs.github.io/Portfolio/",
-  "name": "portifolio",
-  "version": "0.1.0",
+  "name": "portfolio",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.6.0",
-    "@emotion/styled": "^11.6.0",
-    "@mui/icons-material": "^5.1.1",
-    "@mui/material": "^5.1.1",
-    "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "framer-motion": "4.1.17",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "next",
-    "web-vitals": "^1.1.2",
-    "webpack": "^4.42.0"
-  },
+  "version": "0.0.0",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start webpack",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "devicon": "^2.15.1",
+    "framer-motion": "^6.3.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
+    "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.5"
   }
 }

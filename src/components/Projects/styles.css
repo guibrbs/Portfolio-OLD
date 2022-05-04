@@ -1,0 +1,159 @@
+.projects-area{
+    position: relative;
+    margin: 5rem 0 5rem 0;
+    width: 100%;
+    height: max-content;
+}
+
+.projects-area::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 23rem;
+    height: 1px;
+    background-color: var(--line-color);
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    transition: ease .5s;
+    color: var(--primary-color);
+}
+
+.fa-chevron-down{
+    transition: ease .5s;
+}
+
+.fa-chevron-down:hover{
+    transform: translateY(3px);
+}
+
+.container-title{ 
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: xx-large;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+
+
+.projects{
+    width: 100%;
+    max-width: 23rem;
+    min-width: 15rem;
+    height: 100%;
+    min-height: 38rem;
+    border: 1px solid var(--line-color);
+    border-radius: 25px;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.explore{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    position: relative;
+    margin: 2rem auto 0;
+    font-size: x-large;
+    letter-spacing: normal;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.explore a{
+    color: var(--primary-color);
+}
+
+.explore::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    margin-top: 2rem;
+    background: linear-gradient(var(--primary-color), var(--primary-color)) center/0% 100% no-repeat;
+    transition: all .5s;
+}
+
+.explore:hover{
+    filter: brightness(1.5);
+}
+
+.explore:hover.explore::after{
+    background-size: 100% 100%;
+}
+
+.imgs{
+    width: 100%;
+    height: 42%;
+}
+
+.content-project{
+    width: 100%;
+    height: fit-content;
+    transition: ease-in-out .3s;
+}
+
+.description-project{
+    opacity: 1;
+    color: var(--primary-color);
+    padding: 1.4rem 2rem 0 2rem;
+    letter-spacing: .2px;
+    word-spacing: 2px;
+}
+
+h2.description-project{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+p.description-project{
+    color: var(--primary-color-darker);
+    padding-top: .5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+p.description-project:last-child{
+    color: var(--primary-color);
+    padding-top: 1rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 531px){
+    .container-title{
+        font-size: 1.5rem;
+    }
+    .projects{
+        min-height: 26rem;
+    }
+    .description-project{
+        padding: 1rem 1.5rem 0 1.5rem;
+    }
+    h2.description-project{
+        font-size: 1rem;
+    }
+    p.description-project{
+        padding-top: .3rem;
+        font-size: .8rem;
+    }
+    p.description-project:last-child{
+        padding-top: .5rem;
+        font-size: 1rem;
+    }
+}
