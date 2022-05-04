@@ -13,7 +13,7 @@ export default function About() {
         <div className="about-grid">
           <div className="about-wrapper">
             <div className="imgBx">
-                <img src={Photo} alt="" className="photo" />
+                <img src={Photo} alt="personal photo" className="photo" />
             </div>
             <h2>Guilherme Barbosa</h2>
             <div>
