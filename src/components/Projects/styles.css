@@ -53,7 +53,9 @@
 .projects{
     width: 100%;
     max-width: 23rem;
-    height: 38rem;
+    min-width: 15rem;
+    height: 100%;
+    min-height: 38rem;
     border: 1px solid var(--line-color);
     border-radius: 25px;
     margin: 2rem;
@@ -102,15 +104,8 @@
 
 .content-project{
     width: 100%;
-    height: 0;
-    background-color: var(--backgroundColor);
-    filter: brightness(1.2);
+    height: fit-content;
     transition: ease-in-out .3s;
-}
-
-.projects:hover .content-project{
-    opacity: 0.9;
-    height: 100%;
 }
 
 .description-project{
@@ -138,4 +133,27 @@ p.description-project:last-child{
     padding-top: 1rem;
     font-weight: 700;
     font-size: 1.4rem;
+}
+
+@media (max-width: 531px){
+    .container-title{
+        font-size: 1.5rem;
+    }
+    .projects{
+        min-height: 26rem;
+    }
+    .description-project{
+        padding: 1rem 1.5rem 0 1.5rem;
+    }
+    h2.description-project{
+        font-size: 1rem;
+    }
+    p.description-project{
+        padding-top: .3rem;
+        font-size: .8rem;
+    }
+    p.description-project:last-child{
+        padding-top: .5rem;
+        font-size: 1rem;
+    }
 }
