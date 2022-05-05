@@ -14,27 +14,27 @@ function App() {
     <div className={isActive ? "container dark" : "container light"}>
       <div className="wrapper">
         <Routes>
-          <Route path="/Portfolio" element={<Home />} />
-          <Route path="/Portfolio/projetos" element={<Projects_Page />} />
-          <Route path="/Portfolio/projetos/INDICAA" element={<IndividualProjects />} />
-          <Route path="/Portfolio/projetos/SignIn" element={<IndividualProjects />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projetos" element={<Projects_Page />} />
+          <Route path="/projetos/INDICAA" element={<IndividualProjects />} />
+          <Route path="/projetos/SignIn" element={<IndividualProjects />} />
           <Route
-            path="/Portfolio/projetos/Landing-Page"
+            path="/projetos/Landing-Page"
             element={<IndividualProjects />}
           />
           <Route
-            path="/Portfolio/projetos/Clone-Netflix"
+            path="/projetos/Clone-Netflix"
             element={<IndividualProjects />}
           />
           <Route
-            path="/Portfolio/projetos/Interactive-Rating"
+            path="/projetos/Interactive-Rating"
             element={<IndividualProjects />}
           />
           <Route
-            path="/Portfolio/projetos/Covid-Tracker"
+            path="/projetos/Covid-Tracker"
             element={<IndividualProjects />}
           />
-          <Route path="/Portfolio/sobre" element={<About />} />
+          <Route path="/sobre" element={<About />} />
         </Routes>
       </div>
     </div>

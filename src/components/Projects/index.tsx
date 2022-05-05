@@ -6,12 +6,13 @@ import CloneNetflix from "../../assets/images/clone-netflix.png";
 import LandingPage from "../../assets/images/landing-page.png";
 import InteractiveRating from "../../assets/images/interactive-rating.png";
 import CovidTracker from "../../assets/images/covid-tracker.png";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Projects() {
   type Projects_map = object[];
   const projects_map: Projects_map = [
     {
-      link: "/Portfolio/projetos/INDICAA",
+      link: "/projetos/INDICAA",
       img: Metabase,
       alt: "image-metabase",
       title: "INDICAA",
@@ -21,7 +22,7 @@ export default function Projects() {
       id: "one",
     },
     {
-      link: "/Portfolio/projetos/SignIn",
+      link: "/projetos/SignIn",
       img: SignIn,
       alt: "image-sign-in",
       title: "Sign in | Sign up",
@@ -31,7 +32,7 @@ export default function Projects() {
       id: "two",
     },
     {
-        link: "/Portfolio/projetos/Landing-Page",
+        link: "/projetos/Landing-Page",
         img: LandingPage,
         alt: "Landing Page",
         title: "Landing Page",
@@ -41,7 +42,7 @@ export default function Projects() {
         id: "three",
     },
     {
-      link: "/Portfolio/projetos/Clone-Netflix",
+      link: "/projetos/Clone-Netflix",
       img: CloneNetflix,
       alt: "Clone Netflix",
       title: "Clone Netflix",
@@ -51,7 +52,7 @@ export default function Projects() {
       id: "four",
     },
     {
-      link: "/Portfolio/projetos/Interactive-Rating",
+      link: "/projetos/Interactive-Rating",
       img: InteractiveRating,
       alt: "Interactive Rating Component",
       title: "Interactive Rating Component",
@@ -60,7 +61,7 @@ export default function Projects() {
       id: "five",
     },
     {
-      link: "/Portfolio/projetos/Covid-Tracker",
+      link: "/projetos/Covid-Tracker",
       img: CovidTracker,
       alt: "Covid Tracker",
       title: "Covid Tracker",
@@ -80,7 +81,7 @@ export default function Projects() {
         {projects_map.map((project: any) => {
           return (
             <div className="projects" id={project.id} key={project.id}>
-              <a href={project.link}>
+              <NavLink to={project.link} reloadDocument>
                 <img src={project.img} alt={project.alt} className="imgs" />
                 <div className="content-project">
                   <h2 className="description-project">
@@ -89,13 +90,13 @@ export default function Projects() {
                   <p className="description-project">{project.description}</p>
                   <p className="description-project">Saiba mais</p>
                 </div>
-              </a>
+              </NavLink>
             </div>
           );
         })}
       </div>
       <h2 className="explore">
-        <a href="/Portfolio/projetos">Explore mais projetos</a>
+        <NavLink to="/projetos" reloadDocument>Explore mais projetos</NavLink>
       </h2>
     </div>
   );
