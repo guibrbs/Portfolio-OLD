@@ -1,5 +1,5 @@
 import ReactDOM  from 'react-dom/client';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import App from './App'
 import ContactProvider from './ContactContext';
 import DarkModeProvider from './DarkModeContext';
@@ -8,9 +8,9 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <DarkModeProvider>
   <ContactProvider>
-    <HashRouter basename='/Portfolio'>
+    <BrowserRouter basename='/Portfolio'>
         <App />
-    </HashRouter>
+    </BrowserRouter>
   </ContactProvider>
   </DarkModeProvider>
 )
