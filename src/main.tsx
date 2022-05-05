@@ -8,7 +8,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <DarkModeProvider>
   <ContactProvider>
-    <BrowserRouter>
+    <BrowserRouter basename='/Portfolio'>
         <App />
     </BrowserRouter>
   </ContactProvider>

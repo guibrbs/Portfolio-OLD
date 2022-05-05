@@ -4,6 +4,7 @@ import "./styles.css";
 import Photo from "../../assets/images/photo.png";
 import Footer from "../../components/Footer";
 import Curriculum from '../../assets/images/CV-GuilhermeBarbosaFerreira.pdf'
+import { NavLink } from "react-router-dom";
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
           <div>
             <div id="about-title">
               <h1>Eae.</h1>
-              <a href="/" id="arrow-left"><i className="fa-solid fa-arrow-left-long"></i></a>
+              <NavLink to="/" id="arrow-left"><i className="fa-solid fa-arrow-left-long"></i></NavLink>
             </div>
             <p id="description">
               eu sou o Guilherme, sou <b>técnico em informática</b> e atualmente estou fazendo graduação em <b>Engenharia de Software</b> pela Universidade de Brasília.
