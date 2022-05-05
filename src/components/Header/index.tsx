@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { DarkModeContext } from "../../DarkModeContext";
 import "./styles.css";
 
@@ -32,18 +33,19 @@ export default function Header() {
           GBF
         </a>
         <div className={hamburguer ? "links-wrapper active" : "links-wrapper"}>
-          <a href="/" className={href === "/Portfolio/" ? "links active" : "links"}>
+          <NavLink to={'/'} reloadDocument className={href === "/Portfolio/" ? "links active" : "links"}>
             Home
-          </a>
-          <a
-            href="/Portfolio/projetos"
-            className={href === "/Portfolio/projetos" ? "links active" : "links"}
+          </NavLink>
+          <NavLink
+            to="/projetos"
+            reloadDocument
+            className={href === "/projetos" ? "links active" : "links"}
           >
             Projetos
-          </a>
-          <a href="/Portfolio/sobre" className={href === "/Portfolio/sobre" ? "links active" : "links"}>
+          </NavLink>
+          <NavLink to="/sobre" reloadDocument className={href === "/sobre" ? "links active" : "links"}>
             Sobre
-          </a>
+          </NavLink>
         </div>
         <div className="icon" onClick={() => setActiveState(!isActive)}>
           <i className="fa-solid fa-moon"></i>

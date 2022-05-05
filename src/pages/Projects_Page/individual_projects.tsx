@@ -8,6 +8,7 @@ import CloneNetflix from '../../assets/images/clone-netflix.png'
 import InteractiveRating from '../../assets/images/interactive-rating.png'
 import CovidTracker from '../../assets/images/covid-tracker.png'
 import Footer from "../../components/Footer";
+import { NavLink } from "react-router-dom";
 
 export default function IndividualProjects() {
   type Individual_projects = object[];
@@ -120,6 +121,7 @@ export default function IndividualProjects() {
   const [url, setUrl] = useState('')
   useEffect(()=>{
     const href = window.location.pathname
+    console.log(href)
     if (href === '/Portfolio/projetos/INDICAA'){
       setUrl('1')
     }
@@ -149,9 +151,9 @@ export default function IndividualProjects() {
             <div className="container-ip" key={project.id}>
               <>
                 <div className="title-wrapper">
-                  <a href="/Portfolio/projetos" className="arrow-left">
+                  <NavLink to="/projetos" className="arrow-left">
                     <i className="fa-solid fa-arrow-left-long"></i>
-                  </a>
+                  </NavLink>
                   <h1 className="container-title"><a href={project.link} target={"_blank"} rel={"noreferrer noopener"} className="bigger">{project.title}</a></h1>
                 </div>
                 <p className="content-ip">{project.description}</p>
