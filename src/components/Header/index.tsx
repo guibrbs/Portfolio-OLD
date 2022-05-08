@@ -22,7 +22,7 @@ export default function Header() {
   }, []);
   const [href, setHref] = useState("");
   useEffect(() => {
-    const localhref = window.location.pathname;
+    const localhref = window.location.hash;
     setHref(localhref);
   });
   const { isActive, setActiveState } = useContext(DarkModeContext);
