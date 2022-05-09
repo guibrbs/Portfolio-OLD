@@ -1,0 +1,25 @@
+name: Deploy gh-pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Development Code
+        uses: actions/checkout@v2
+      - name: Use Node.js 17.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 17.x
+      - run: npm install
+      - run: npm run build
+      - name: Deploy dist
+        working-directory: ./dist
+        run: git init && git checkout -b main && git add -A && git commit -m '🚀 Deploying new version'
+      - name: Push to gh-pages
+        run: git push -f git@github.com:guibrbs/Portfolio.git main:gh-pages
