@@ -24,4 +24,4 @@ jobs:
         working-directory: ./dist
         run: git init && git checkout -b main && git add -A && git commit -m '🚀 Deploying new version'
       - name: Push to gh-pages
-        run: git push -f git@github.com:guibrbs/Portfolio.git main:gh-pages
+        run: git subtree push -f --prefix dist origin gh-pages
