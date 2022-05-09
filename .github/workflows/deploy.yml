@@ -18,6 +18,8 @@ jobs:
           node-version: 17.x
       - run: npm install
       - run: npm run build
+      - name: Git config
+        run: git config --global user.email "200037994@aluno.unb.br" && git config --global user.name "guibrbs"
       - name: Deploy dist
         working-directory: ./dist
         run: git init && git checkout -b main && git add -A && git commit -m '🚀 Deploying new version'
