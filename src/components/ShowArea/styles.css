@@ -160,11 +160,11 @@
 
 @media (max-width: 414px){
     .hello{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     .nome{
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
     }
     .pessoal-description{
         font-size: 1.3rem;
@@ -184,5 +184,17 @@
     }
     .social[title]:hover::after{
         display: none;
+    }
+}
+
+@media (max-height: 770px) and (min-width: 1024px){
+    .static{
+        width: 70%;
+    }
+    .hello{
+        font-size: 2.8rem;
+    }
+    .nome{
+        font-size: 3.3rem;
     }
 }
