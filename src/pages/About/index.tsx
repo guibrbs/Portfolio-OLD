@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import "./styles.css";
 import Photo from "../../assets/images/photo.png";
@@ -7,6 +7,9 @@ import Curriculum from '../../assets/images/CV-GuilhermeBarbosaFerreira.pdf'
 import { NavLink } from "react-router-dom";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <Header />
