@@ -22,16 +22,16 @@ export default function Header() {
   }, []);
   const [href, setHref] = useState("");
   useEffect(() => {
-    const localhref = window.location.pathname;
+    const localhref = window.location.hash;
     setHref(localhref);
   });
   const { isActive, setActiveState } = useContext(DarkModeContext);
   return (
     <header>
       <div className={scroll ? "header sticky" : "header" }>
-        <a href="/" className="logo">
+        <NavLink to="/" reloadDocument className="logo">
           GBF
-        </a>
+        </NavLink>
         <div className={hamburguer ? "links-wrapper active" : "links-wrapper"}>
           <NavLink to={'/'} reloadDocument className={href === "/Portfolio/" ? "links active" : "links"}>
             Home

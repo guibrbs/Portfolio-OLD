@@ -120,24 +120,23 @@ export default function IndividualProjects() {
   ];
   const [url, setUrl] = useState('')
   useEffect(()=>{
-    const href = window.location.pathname
-    console.log(href)
-    if (href === '/Portfolio/projetos/INDICAA'){
+    const href = window.location.hash
+    if (href === '#/projetos/INDICAA'){
       setUrl('1')
     }
-    else if (href === '/Portfolio/projetos/SignIn'){
+    else if (href === '#/projetos/SignIn'){
       setUrl('2')
     }
-    else if (href === '/Portfolio/projetos/Landing-Page'){
+    else if (href === '#/projetos/Landing-Page'){
       setUrl('3')
     }
-    else if (href === '/Portfolio/projetos/Clone-Netflix'){
+    else if (href === '#/projetos/Clone-Netflix'){
       setUrl('4')
     }
-    else if (href === '/Portfolio/projetos/Interactive-Rating'){
+    else if (href === '#/projetos/Interactive-Rating'){
       setUrl('5')
     }
-    else if (href === '/Portfolio/projetos/Covid-Tracker'){
+    else if (href === '#/projetos/Covid-Tracker'){
       setUrl('6')
     }
   }, [])

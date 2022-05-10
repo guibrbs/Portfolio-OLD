@@ -57,6 +57,7 @@ export default function FormContact() {
               id="email"
               placeholder="Escreva seu email aqui"
               className="email"
+              required
             />
             <input type="submit" value="Enviar" className="submit" />
           </form>
