@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react";
+import { useContext } from "react";
 import './styles.css'
 import AvatarLight from '../../assets/images/AvatarLight.png'
 import AvatarDark from '../../assets/images/AvatarDark.png'

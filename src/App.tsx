@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from "react";
+import { useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
@@ -6,7 +6,6 @@ import Projects_Page from "./pages/Projects_Page";
 import { DarkModeContext } from "./DarkModeContext";
 import IndividualProjects from "./pages/Projects_Page/individual_projects";
 import About from "./pages/About";
-import { Loading, Switch } from "./components/Loading";
 
 function App() {
   const { isActive } = useContext(DarkModeContext);
