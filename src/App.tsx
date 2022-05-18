@@ -6,6 +6,7 @@ import Projects_Page from "./pages/Projects_Page";
 import { DarkModeContext } from "./DarkModeContext";
 import IndividualProjects from "./pages/Projects_Page/individual_projects";
 import About from "./pages/About";
+import { Loading, Switch } from "./components/Loading";
 
 function App() {
   const { isActive } = useContext(DarkModeContext);
@@ -17,23 +18,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projetos" element={<Projects_Page />} />
           <Route path="/projetos/INDICAA" element={<IndividualProjects />} />
+          <Route path="/projetos/NLW" element={<IndividualProjects />} />
           <Route path="/projetos/SignIn" element={<IndividualProjects />} />
-          <Route
-            path="/projetos/Landing-Page"
-            element={<IndividualProjects />}
-          />
-          <Route
-            path="/projetos/Clone-Netflix"
-            element={<IndividualProjects />}
-          />
-          <Route
-            path="/projetos/Interactive-Rating"
-            element={<IndividualProjects />}
-          />
-          <Route
-            path="/projetos/Covid-Tracker"
-            element={<IndividualProjects />}
-          />
+          <Route path="/projetos/Landing-Page" element={<IndividualProjects />} />
+          <Route path="/projetos/Clone-Netflix" element={<IndividualProjects />} />
+          <Route path="/projetos/Interactive-Rating" element={<IndividualProjects />} />
+          <Route path="/projetos/Covid-Tracker" element={<IndividualProjects />} />
+          <Route path="/loading" element={<Loading />}/>
           <Route path="/sobre" element={<About />} />
         </Routes>
       </div>
