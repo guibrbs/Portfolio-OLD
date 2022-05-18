@@ -6,7 +6,8 @@ import CloneNetflix from "../../assets/images/clone-netflix.png";
 import LandingPage from "../../assets/images/landing-page.png";
 import InteractiveRating from "../../assets/images/interactive-rating.png";
 import CovidTracker from "../../assets/images/covid-tracker.png";
-import { Link, NavLink } from "react-router-dom";
+import NlwImpulse from "../../assets/images/nlw-impulse.png"
+import { NavLink } from "react-router-dom";
 
 export default function Projects() {
   type Projects_map = object[];
@@ -17,9 +18,19 @@ export default function Projects() {
       alt: "image-metabase",
       title: "INDICAA",
       description:
-        "Feito exclusivamente para coordenadores e pessoas da gestão da Universidade de Brasília, com o intuito de auxiliar a administração das matérias ofertadas, indicando \
-        através de gráficos disponíveis no Metabase.",
+        "Feito exclusivamente para coordenadores e pessoas da gestão da Universidade de Brasília, com o intuito de auxiliar a \
+         administração das matérias ofertadas, indicando através de gráficos disponíveis no Metabase.",
       id: "one",
+    },
+    {
+      link: "/projetos/NLW",
+      img: NlwImpulse,
+      alt: "Nlw Impulse",
+      title: "Nlw Impulse",
+      description: 
+      "Projeto pessoal seguindo os passos no NLW Return Impulse, realizado pela Rocketseat, com o objetivo de aprender novas tecnologias, \
+      melhorar o desenvolvimento técnico e introduzir o desenvolvimento mobile.",
+      id: "two",
     },
     {
       link: "/projetos/SignIn",
@@ -29,7 +40,7 @@ export default function Projects() {
       description:
         "Mini projeto pessoal com o objetivo de aprimorar as habilidades técnicas no qual envolve o desenvolvimento de formulários de sign in e sign up, alternando entre si \
         com animações sem nenhum framework.",
-      id: "two",
+      id: "three",
     },
     {
         link: "/projetos/Landing-Page",
@@ -39,7 +50,7 @@ export default function Projects() {
         description:
         "Projeto pessoal com o objetivo de aprimorar as habilidades técnicas envolvendo o desenvolvimento de uma Landing Page responsiva em qualquer dispositivo, além de incluir o modo noturno\
         animado.",
-        id: "three",
+        id: "four",
     },
     {
       link: "/projetos/Clone-Netflix",
@@ -49,7 +60,7 @@ export default function Projects() {
       description:
         "Projeto pessoal com o objetivo de aprimorar as habilidades técnicas envolvendo o desenvolvimento de uma interface parecida com a da Netflix, utilizando imagens captadas \
         através de uma API open source.",
-      id: "four",
+      id: "five",
     },
     {
       link: "/projetos/Interactive-Rating",
@@ -58,7 +69,7 @@ export default function Projects() {
       title: "Interactive Rating Component",
       description:
         "Projeto pessoal com o objetivo de aprimorar as habilidades técnicas envolvendo o desenvolvimento um componenete interativo de classificação. ",
-      id: "five",
+      id: "six",
     },
     {
       link: "/projetos/Covid-Tracker",
@@ -66,9 +77,9 @@ export default function Projects() {
       alt: "Covid Tracker",
       title: "Covid Tracker",
       description:
-        "Projeto pessoal com o objetivo de aprimorar as habilidades técnicas envolvendo o desenvolvimento de um rastreador de casos de COVID-19 no Brasil e no mundo,\
-        através de uma API open source.",
-      id: "six",
+        "Projeto pessoal com o objetivo de aprimorar as habilidades técnicas envolvendo o desenvolvimento de um rastreador de casos de \
+        COVID-19 no Brasil e no mundo, através de uma API open source.",
+      id: "seven",
     },
   ];
   return (
