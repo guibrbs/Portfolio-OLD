@@ -95,6 +95,7 @@
   width: 1.5em;
   height: 1.5em;
   margin-right: .5rem;
+  margin-bottom: .5rem;
   border: 1px solid var(--line-color);
   border-radius: .5rem;
   transition: filter .3s;

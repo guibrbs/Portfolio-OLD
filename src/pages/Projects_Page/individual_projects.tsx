@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import "./styles.css";
-import Metabase from '../../assets/images/metabase.png'
-import SignIn from '../../assets/images/sliding-signin.png'
+import Metabase from '../../assets/images/metabase.png';
+import SignIn from '../../assets/images/sliding-signin.png';
 import LandingPage from "../../assets/images/landing-page.png";
-import CloneNetflix from '../../assets/images/clone-netflix.png'
-import InteractiveRating from '../../assets/images/interactive-rating.png'
-import CovidTracker from '../../assets/images/covid-tracker.png'
+import CloneNetflix from '../../assets/images/clone-netflix.png';
+import InteractiveRating from '../../assets/images/interactive-rating.png';
+import CovidTracker from '../../assets/images/covid-tracker.png';
+import NlwImpulse from '../../assets/images/nlw-impulse.png';
 import Footer from "../../components/Footer";
 import { NavLink } from "react-router-dom";
 
@@ -34,6 +35,33 @@ export default function IndividualProjects() {
       id: '1'
     },
     {
+      title: "Nlw Impulse",
+      description: "Nlw Return Impulse é um projeto seguindo os passos disponibilizados em vídeos pela Rocketseat. É uma semana inteira de programação \
+      na prática, onde o objetivo era desenvolver um widget de feedback, que apresenta três opções: Bug, Problema ou Outro. Ao selecionar a opção do feedback, \
+      é possível realizar um comentário e printar a tela. É um projeto full-stack, então há um um backend que recebe as informações e enviam para o email \
+      do autor.",
+      tech: 
+        <>
+          <i className="devicon-react-original colored" title="React"></i>
+          <i className="devicon-javascript-plain colored" title="Javascript" style={{color: "#FFA701"}}></i>
+          <i className="devicon-typescript-plain colored" title="Typescript"></i>
+          <i className="devicon-tailwindcss-plain colored" title="TailwindCSS"></i>
+          <i className="ph-phosphor-logo colored" title="Phosphor" style={{color: 'var(--primary-color)'}}></i>
+          <i className="devicon-express-original colored" title="Express"></i>
+          <i className="devicon-jest-plain colored" title="Jest"></i>
+          <i className="devicon-nodejs-plain-wordmark colored" title="NodeJs"></i>
+          <a href="https://github.com/guibrbs/nlw-impulse-web" target={"_blank"} rel={"noreferrer noopener"}>
+            <i className="devicon-github-original colored"></i>
+          </a>
+          <a href="https://github.com/guibrbs/nlw-impulse-server" target={"_blank"} rel={"noreferrer noopener"}>
+           <i className="devicon-postgresql-plain colored"></i>
+          </a>
+        </>,
+      img: NlwImpulse,
+      link: 'http://nlw-impulse-web-six.vercel.app/',
+      id: '2'
+    },
+    {
       title: "Sign In | Sign Up",
       description: "Sign In | Sign Up é um projeto de cunho pessoal com o intuito de realizar, somente com CSS, a animação entre páginas de cadastro e login. As ilustrações \
       foram coletadas a partir do site UnDraw, que disponibiliza gratuitamente seus arquivos. O objetivo com o desenvolvimento dessa interface foi para aprimorar as habilidades técnicas \
@@ -47,7 +75,7 @@ export default function IndividualProjects() {
         </>,
       img: SignIn,
       link: 'https://guibrbs.github.io/Sliding-Sign-In/',
-      id: '2'
+      id: '3'
     },
     {
       title: "Landing Page",
@@ -64,7 +92,7 @@ export default function IndividualProjects() {
         </>,
       img: LandingPage,
       link: 'https://guibrbs.github.io/landing_page/',
-      id: '3'
+      id: '4'
     },
     {
       title: "Clone Netflix",
@@ -82,7 +110,7 @@ export default function IndividualProjects() {
         </>,
       img: CloneNetflix,
       link: 'https://guibrbs.github.io/ProjetoNetflix/',
-      id: '4'
+      id: '5'
     },
     {
       title: "Interactive Rating",
@@ -98,7 +126,7 @@ export default function IndividualProjects() {
         </>,
       img: InteractiveRating,
       link: 'https://guibrbs.github.io/Interacting_rating_component/',
-      id: '5'
+      id: '6'
     },
     {
       title: "Covid-19 Tracker",
@@ -115,7 +143,7 @@ export default function IndividualProjects() {
         </>,
       img: CovidTracker,
       link: 'https://guibrbs.github.io/Covid-Tracker/',
-      id: '6'
+      id: '7'
     },
   ];
   const [url, setUrl] = useState('')
@@ -124,20 +152,23 @@ export default function IndividualProjects() {
     if (href === '#/projetos/INDICAA'){
       setUrl('1')
     }
-    else if (href === '#/projetos/SignIn'){
+    else if (href === '#/projetos/NLW'){
       setUrl('2')
     }
-    else if (href === '#/projetos/Landing-Page'){
+    else if (href === '#/projetos/SignIn'){
       setUrl('3')
     }
-    else if (href === '#/projetos/Clone-Netflix'){
+    else if (href === '#/projetos/Landing-Page'){
       setUrl('4')
     }
-    else if (href === '#/projetos/Interactive-Rating'){
+    else if (href === '#/projetos/Clone-Netflix'){
       setUrl('5')
     }
-    else if (href === '#/projetos/Covid-Tracker'){
+    else if (href === '#/projetos/Interactive-Rating'){
       setUrl('6')
+    }
+    else if (href === '#/projetos/Covid-Tracker'){
+      setUrl('7')
     }
   }, [])
 
