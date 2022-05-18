@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles.css";
 import Metabase from "../../assets/images/metabase.png";
 import SignIn from "../../assets/images/sliding-signin.png";
