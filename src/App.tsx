@@ -24,7 +24,6 @@ function App() {
           <Route path="/projetos/Clone-Netflix" element={<IndividualProjects />} />
           <Route path="/projetos/Interactive-Rating" element={<IndividualProjects />} />
           <Route path="/projetos/Covid-Tracker" element={<IndividualProjects />} />
-          <Route path="/loading" element={<Loading />}/>
           <Route path="/sobre" element={<About />} />
         </Routes>
       </div>
